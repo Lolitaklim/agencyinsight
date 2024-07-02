@@ -1,0 +1,7 @@
+плавный скролл
+
+//  "scripts": {
+//     "start": "parcel src/index.html",
+//     "build": "parcel build src/index.html --public-url ./",
+//     "test": "echo \"Error: no test specified\" && exit 1"
+//   }

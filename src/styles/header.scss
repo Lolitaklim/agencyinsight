@@ -1,0 +1,153 @@
+header {
+  border-bottom: 1px solid rgba(233, 237, 244, 1);
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    .logo {
+      img {
+        width: 189px;
+        height: 32px;
+      }
+    }
+    nav {
+      display: flex;
+      gap: 50px;
+
+      .menu-link {
+        font-size: 18px;
+        line-height: 20px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover:after {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        &:hover:before {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+
+        &:after {
+          top: 0;
+          left: 0;
+          display: block;
+          transition: 0.3s;
+          position: absolute;
+          content: attr(data-b);
+          transform: translateY(-100%);
+        }
+
+        &:before {
+          top: 0;
+          left: 0;
+          opacity: 1;
+          display: block;
+          transition: 0.3s;
+          position: relative;
+          content: attr(data-f);
+          transform: translateY(0);
+        }
+      }
+
+      .dropdown {
+        position: relative;
+        .drop-link {
+          display: flex;
+          align-items: center;
+          span {
+            background-image: url('../img/chevron-down.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease;
+          }
+        }
+        &:hover span {
+          transform: rotate(180deg);
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 100px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          a {
+            display: block;
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+        }
+        &:hover .dropdown-content {
+          display: block;
+        }
+        &:hover .drop-link {
+          // background-color: #3e8e41;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .contact {
+      }
+
+      .menu-btn {
+      }
+    }
+  }
+
+  .panel {
+    position: fixed;
+
+    height: 100%;
+    background-color: #ccc;
+
+    transition: transform 0.7s ease;
+  }
+
+  .right-panel {
+    right: 0;
+    top: 0;
+    width: 66.66%;
+    transform: translateY(100%);
+  }
+
+  .left-panel {
+    background-color: #e5abab;
+    left: 0;
+    top: 0;
+    width: 33.33%;
+
+    transform: translateY(-100%);
+  }
+
+  .opened-right {
+    transform: translateY(0);
+  }
+
+  .opened-left {
+    transform: translateY(0);
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  button {
+    position: relative;
+    // top: 20px;
+    // left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 3;
+  }
+}

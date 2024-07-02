@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анимация при наведении</title>
+    <style>
+      body {
+        display: flex;
+        /* position: relative; */
+        background: #e8e8f1;
+        justify-content: center;
+      }
+
+      .btn-flip {
+        /* opacity: 1; */
+        /* outline: 0; */
+        color: #0d0d0d;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        /* letter-spacing: 1px; */
+        display: inline-block;
+        text-decoration: none;
+        /* font-family: 'Open Sans'; */
+        /* text-transform: uppercase; */
+      }
+
+      .btn-flip:hover:after {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+
+      .btn-flip:hover:before {
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+
+      .btn-flip:after {
+        top: 0;
+        left: 0;
+        /* opacity: 0; */
+        width: 100%;
+        color: #323237;
+        display: block;
+        transition: 0.3s;
+        position: absolute;
+        /* background: #adadaf; */
+        content: attr(data-back);
+        transform: translateY(-50%) rotateX(90deg);
+      }
+
+      .btn-flip:before {
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: #131314;
+        display: block;
+        /* padding: 0 30px; */
+        /* line-height: 40px; */
+        transition: 0.3s;
+        position: relative;
+        /* background: #323237; */
+        content: attr(data-front);
+        transform: translateY(0) rotateX(0);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="btn-flip" data-back="Back" data-front="Front"></a>
+  </body>
+</html>

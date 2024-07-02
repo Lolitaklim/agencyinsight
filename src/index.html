@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>главная</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="./styles/header.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <a class="logo" href="#">
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <nav>
+          <a class="menu-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
+          <div class="dropdown">
+            <a
+              class="menu-link drop-link"
+              href="#"
+              data-b="Услуги"
+              data-f="Услуги"
+              ><span></span
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Ссылка 1</a>
+              <a href="#">Ссылка 2</a>
+              <a href="#">Ссылка 3</a>
+            </div>
+          </div>
+          <a class="menu-link" href="#" data-b="Команда" data-f="Команда"></a>
+          <a class="menu-link" href="#" data-b="Новости" data-f="Новости"></a>
+        </nav>
+        <div class="buttons">
+          <a class="contact" href="#">Связаться</a>
+          <button class="menu-btn" id="toggleMenu">Меню</button>
+        </div>
+      </div>
+      <div class="menu">
+        <div id="panelLeft" class="panel left-panel">
+          <div class="content">
+            <h2>Содержимо panelLeft</h2>
+            <p>Содержимое экрана.</p>
+          </div>
+        </div>
+        <div id="panelRight" class="panel right-panel">
+          <div class="content">
+            <h2>Содержимое panelRight</h2>
+            <p>Содержимое экрана.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <a href="test.html">test</a>
+    <script src="./scripts/headerMenu.js"></script>
+  </body>
+</html>
