@@ -6,18 +6,19 @@
     <title>главная</title>
     <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="stylesheet" href="./styles/header.scss" />
+    <link rel="stylesheet" href="./styles/hero.scss" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="header container">
         <a class="logo" href="#">
           <img src="./img/logo.svg" alt="logo" />
         </a>
         <nav>
-          <a class="menu-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
+          <a class="header-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
           <div class="dropdown">
             <a
-              class="menu-link drop-link"
+              class="header-link drop-link"
               href="#"
               data-b="Услуги"
               data-f="Услуги"
@@ -29,30 +30,107 @@
               <a href="#">Ссылка 3</a>
             </div>
           </div>
-          <a class="menu-link" href="#" data-b="Команда" data-f="Команда"></a>
-          <a class="menu-link" href="#" data-b="Новости" data-f="Новости"></a>
+          <a class="header-link" href="#" data-b="Команда" data-f="Команда"></a>
+          <a class="header-link" href="#" data-b="Новости" data-f="Новости"></a>
         </nav>
         <div class="buttons">
-          <a class="contact" href="#">Связаться</a>
-          <button class="menu-btn" id="toggleMenu">Меню</button>
+          <a class="button-fill-hover" href="#"><span></span>Связаться</a>
+          <button class="menu-btn" id="toggleMenu"></button>
         </div>
       </div>
       <div class="menu">
         <div id="panelLeft" class="panel left-panel">
           <div class="content">
-            <h2>Содержимо panelLeft</h2>
-            <p>Содержимое экрана.</p>
+            <img class="logo-icon" src="./img/logo-icon.svg" alt="logo icon" />
+            <div class="bottom">
+              <div class="reviews">
+                <img src="./img/logo-icon.svg" alt="logo icon" />
+                <div>
+                  <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                  <p>22 отзыва</p>
+                </div>
+              </div>
+              <p class="tagline">It's all on the surface</p>
+            </div>
           </div>
         </div>
         <div id="panelRight" class="panel right-panel">
           <div class="content">
-            <h2>Содержимое panelRight</h2>
-            <p>Содержимое экрана.</p>
+            <div class="navigation">
+              <p class="title">Навигация</p>
+              <div class="links">
+                <a class="menu-link" href="#">Кейсы<sup>01</sup></a>
+                <div class="dropdown-menu" id="dropdown-menu">
+                  <a class="menu-link drop-link" href="#" id="dropdown-toggle"
+                    >Услуги<span id="chevron"></span><sup>02</sup></a
+                  >
+                  <div class="dropdown-content" id="dropdown-content">
+                    <a href="#">Контекстная реклама</a>
+                    <a href="#">Маркировка рекламы</a>
+                    <a href="#">CID</a>
+                    <a href="#">Создание сайтов</a>
+                    <a href="#">Перевод текста</a>
+                    <a href="#">SMM</a>
+                  </div>
+                </div>
+                <a class="menu-link" href="#">Команда<sup>03</sup></a>
+                <a class="menu-link" href="#">Новости<sup>04</sup></a>
+              </div>
+            </div>
+            <div class="infortmation">
+              <p class="title">WhatsApp<br />Telegram</p>
+              <a href="#">info@agencyinsight.ru</a>
+              <p class="privacy">
+                Политика конфиденциальности<br />
+                © Digital agency Insight 2024
+              </p>
+            </div>
+            <div class="social">
+              <a class="vk" href="#"></a>
+              <a class="tg" href="#"></a>
+              <a class="whatsapp" href="#"></a>
+              <a class="pinterest" href="#"></a>
+              <a class="dzen" href="#"></a>
+              <a class="tiktok" href="#"></a>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
+    <div class="main">
+      <section class="hero">
+        <div class="titles">
+          <h1>Маркетинговое aгентство полного цикла</h1>
+          <h2>
+            Мы предлагаем не услуги,<br />
+            &nbsp;мы предлагаем&nbsp;
+            <span class="typewriter"> <span id="typewriter"></span></span>
+          </h2>
+          <h3>
+            Ваши цели — наши цели. Мы работаем в тесном сотрудничестве с
+            вами,<br />
+            чтобы разработать и реализовать решения, которые помогут вам достичь
+            успеха.
+          </h3>
+        </div>
+        <div class="buttons">
+          <a class="button-fill-hover" href="#"><span></span>Узнать больше</a>
+          <a class="button-fill-hover" href="#"><span></span>Узнать больше2</a>
+        </div>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <a href="test.html">test</a>
     <script src="./scripts/headerMenu.js"></script>
+    <script type="module" src="./scripts/sectionHero.js"></script>
+    <!-- <script src="./scripts/sectionHero.js"></script> -->
+    <!-- <script src="./scripts/buttonFillHover.js"></script> -->
   </body>
 </html>

@@ -1,3 +1,8 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(136, 117, 198, 1);
+
 header {
   border-bottom: 1px solid rgba(233, 237, 244, 1);
   .header {
@@ -15,7 +20,7 @@ header {
       display: flex;
       gap: 50px;
 
-      .menu-link {
+      .header-link {
         font-size: 18px;
         line-height: 20px;
         position: relative;
@@ -96,58 +101,208 @@ header {
       display: flex;
       align-items: center;
       gap: 20px;
-      .contact {
+
+      .button-fill-hover {
+        z-index: 2;
+      }
+      .menu-btn {
+        border: 2px solid $gray;
+        border-radius: 16px;
+        background: transparent;
+        width: 44px;
+        height: 44px;
+        background-image: url('../img/burger-menu.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px 15px;
+        z-index: 2;
       }
 
-      .menu-btn {
+      .close-btn {
+        background-image: url('../img/close.svg');
+        background-size: 18px 18px;
       }
     }
   }
 
-  .panel {
-    position: fixed;
-
-    height: 100%;
-    background-color: #ccc;
-
-    transition: transform 0.7s ease;
-  }
-
-  .right-panel {
-    right: 0;
-    top: 0;
-    width: 66.66%;
-    transform: translateY(100%);
-  }
-
-  .left-panel {
-    background-color: #e5abab;
-    left: 0;
-    top: 0;
-    width: 33.33%;
-
-    transform: translateY(-100%);
-  }
-
-  .opened-right {
-    transform: translateY(0);
-  }
-
-  .opened-left {
-    transform: translateY(0);
-  }
-
-  .content {
-    padding: 20px;
-  }
-
-  button {
-    position: relative;
-    // top: 20px;
-    // left: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    z-index: 3;
+  .menu {
+    color: $white;
+    .panel {
+      position: fixed;
+      height: 100%;
+      transition: transform 0.7s cubic-bezier(0, 0.82, 1, 0.02);
+    }
+    .left-panel {
+      background-color: rgba(115, 95, 180, 1);
+      left: 0;
+      top: 0;
+      width: 33%;
+      transform: translateY(-100%);
+      .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px;
+        .logo-icon {
+          width: 90px;
+          height: 78px;
+        }
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .reviews {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+            }
+          }
+          .tagline {
+            font-size: 20px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+    .right-panel {
+      background-color: $purple;
+      right: 0;
+      top: 0;
+      width: 67%;
+      transform: translateY(100%);
+      .content {
+        display: flex;
+        // align-items: flex-end;
+        height: 100%;
+        .navigation {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .title {
+            font-size: 20px;
+            line-height: 26px;
+          }
+          .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .menu-link {
+              color: $white;
+              font-size: 40px;
+              line-height: 48px;
+              position: relative;
+              sup {
+                font-size: 12px;
+                position: absolute;
+                top: 10px;
+                padding-left: 6px;
+              }
+            }
+            .dropdown-menu {
+              position: relative;
+              .drop-link {
+                display: flex;
+                align-items: center;
+                span {
+                  background-image: url('../img/chevron-down-white.svg');
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  width: 44px;
+                  height: 44px;
+                  transform: rotate(180deg);
+                  transition: transform 0.3s ease;
+                }
+                .open-span {
+                  transform: rotate(0deg);
+                }
+                sup {
+                  position: absolute;
+                  top: 10px;
+                  padding-left: 170px;
+                }
+              }
+              .dropdown-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-out;
+                a {
+                  display: block;
+                  padding: 10px 0px 10px 0px;
+                  color: $white;
+                  font-size: 20px;
+                  line-height: 24px;
+                  // &:hover {
+                  // }
+                }
+              }
+              &.open .dropdown-content {
+                max-height: 200px;
+              }
+            }
+          }
+        }
+        .infortmation {
+          margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .title {
+            font-size: 40px;
+            line-height: 48px;
+          }
+          a {
+            color: $white;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-size: 20px;
+          }
+          .privacy {
+            font-size: 20px;
+          }
+        }
+        .social {
+          margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          a {
+            width: 32px;
+            height: 32px;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .vk {
+            background-image: url('../img/vk.svg');
+          }
+          .tg {
+            background-image: url('../img/telegram.svg');
+          }
+          .whatsapp {
+            background-image: url('../img/whatsapp.svg');
+          }
+          .pinterest {
+            background-image: url('../img/pinterest.svg');
+          }
+          .dzen {
+            background-image: url('../img/yandex_zen.svg');
+          }
+          .tiktok {
+            background-image: url('../img/tik_tok.svg');
+          }
+        }
+      }
+    }
+    .opened {
+      transform: translateY(0);
+    }
   }
 }

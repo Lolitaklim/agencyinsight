@@ -3,70 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Анимация при наведении</title>
+    <title>Infinite Scrolling Logos</title>
     <style>
-      body {
+      .brand-parent {
         display: flex;
-        /* position: relative; */
-        background: #e8e8f1;
+        display: -webkit-flex;
+        flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        align-items: center;
+        -webkit-align-items: center;
+      }
+      .brands-carousel {
+        height: 170px;
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        -webkit-align-items: center;
+        animation: animate 30s linear infinite;
+      }
+      .brands-carousel .slide-content {
+        height: 100%;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
         justify-content: center;
+        width: 170px;
       }
-
-      .btn-flip {
-        /* opacity: 1; */
-        /* outline: 0; */
-        color: #0d0d0d;
-        line-height: 40px;
-        position: relative;
-        text-align: center;
-        /* letter-spacing: 1px; */
-        display: inline-block;
-        text-decoration: none;
-        /* font-family: 'Open Sans'; */
-        /* text-transform: uppercase; */
-      }
-
-      .btn-flip:hover:after {
-        opacity: 1;
-        transform: translateY(0) rotateX(0);
-      }
-
-      .btn-flip:hover:before {
-        opacity: 0;
-        transform: translateY(50%) rotateX(90deg);
-      }
-
-      .btn-flip:after {
-        top: 0;
-        left: 0;
-        /* opacity: 0; */
+      .brands-carousel .slide-content a {
+        height: 100%;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        white-space: nowrap;
+        color: #808080;
+        text-transform: uppercase;
+        padding: 20px;
         width: 100%;
-        color: #323237;
-        display: block;
-        transition: 0.3s;
-        position: absolute;
-        /* background: #adadaf; */
-        content: attr(data-back);
-        transform: translateY(-50%) rotateX(90deg);
+        transition: all 0.3s ease-in-out 0s;
       }
-
-      .btn-flip:before {
-        top: 0;
-        left: 0;
-        opacity: 1;
-        color: #131314;
-        display: block;
-        /* padding: 0 30px; */
-        /* line-height: 40px; */
-        transition: 0.3s;
-        position: relative;
-        /* background: #323237; */
-        content: attr(data-front);
-        transform: translateY(0) rotateX(0);
+      .brands-carousel .slide-content a:hover,
+      .brands-carousel .slide-content a:active {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+      }
+      @keyframes animate {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-100%, 0, 0);
+        }
+      }
+      @-webkit-keyframes animate {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(-100%, 0, 0);
+        }
       }
     </style>
   </head>
   <body>
-    <a href="#" class="btn-flip" data-back="Back" data-front="Front"></a>
+    <div class="brand-parent">
+      <div class="brands brands-carousel" id="brands-carousel">
+        <div class="slide-content">
+          <a href="#">Brand 1</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 2</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 3</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 4</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 5</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 6</a>
+        </div>
+      </div>
+      <div class="brands brands-carousel" id="brands-carousel2">
+        <div class="slide-content">
+          <a href="#">Brand 1</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 2</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 3</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 4</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 5</a>
+        </div>
+        <div class="slide-content">
+          <a href="#">Brand 6</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
