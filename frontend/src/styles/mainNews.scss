@@ -1,0 +1,56 @@
+@import 'swiper/swiper.scss';
+@import 'swiper/modules/pagination.scss';
+
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.main-news {
+  .swiper {
+    a {
+      position: relative;
+      color: $white;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .title {
+        position: absolute;
+        top: 9%;
+        left: 4%;
+        // font-size: 10px;
+        font-size: 3.24vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .description {
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+        width: 70%;
+        // font-size: 14px;
+        font-size: 4.3vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.84px;
+      }
+    }
+    .swiper-pagination {
+      position: relative;
+      margin-top: 12px;
+      height: 4px;
+      background-color: 1px solid $gray;
+      border-radius: 2px;
+      width: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      .swiper-pagination-progressbar-fill {
+        background-color: $purple;
+        border-radius: 2px;
+      }
+    }
+  }
+}

@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
-  const toggleButton = document.getElementById('dropdown-toggle')
-  const dropdownMenu = document.getElementById('dropdown-menu')
-  const dropdownContent = document.getElementById('dropdown-content')
-  const chevron = document.getElementById('chevron')
-  toggleButton.addEventListener('click', function (event) {
-    event.preventDefault()
-    if (dropdownMenu.classList.contains('open')) {
-      dropdownContent.style.maxHeight = null
-    } else {
-      dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px'
-    }
-    dropdownMenu.classList.toggle('open')
-    chevron.classList.toggle('open-span')
-  })
+  // const toggleButton = document.getElementById('dropdown-toggle')
+  // const dropdownMenu = document.getElementById('dropdown-menu')
+  // const dropdownContent = document.getElementById('dropdown-content')
+  // const chevron = document.getElementById('chevron')
+  // toggleButton.addEventListener('click', function (event) {
+  //   event.preventDefault()
+  //   if (dropdownMenu.classList.contains('open')) {
+  //     dropdownContent.style.maxHeight = null
+  //   } else {
+  //     dropdownContent.style.maxHeight = dropdownContent.scrollHeight + 'px'
+  //   }
+  //   dropdownMenu.classList.toggle('open')
+  //   chevron.classList.toggle('open-span')
+  // })
 })

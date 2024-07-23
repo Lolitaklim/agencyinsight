@@ -1,0 +1,68 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .titles {
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      opacity: 60%;
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    h2 {
+      font-size: 8.8vw;
+      // font-size: 28px;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.7vw;
+    }
+    h3 {
+      opacity: 60%;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: -0.24px;
+    }
+  }
+  .buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 6px 12px;
+    justify-content: space-between;
+    .btn-additional {
+      background-color: $black;
+      color: $white;
+      .dot {
+        color: $purple;
+      }
+      &:after {
+        background: rgba(136, 117, 198, 0.5); //?
+      }
+    }
+    .btn-contact {
+      background-color: $purple;
+      color: $white;
+      .dot {
+        color: $white;
+      }
+      &:after {
+        background: rgba(136, 117, 198, 0.5); //?
+      }
+    }
+  }
+}

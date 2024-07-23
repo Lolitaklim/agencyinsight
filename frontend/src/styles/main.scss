@@ -1,57 +1,29 @@
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
 }
 
 /* @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
 } */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -156,7 +128,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: button;
+  --webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -207,7 +179,7 @@ textarea {
 }
 
 [type='search'] {
-  -webkit-appearance: textfield;
+  --webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -239,7 +211,7 @@ template {
 $black: rgba(14, 13, 23, 1);
 $white: rgba(255, 255, 255, 1);
 $gray: rgba(217, 217, 217, 1);
-$purple: rgba(136, 117, 198, 1);
+$purple: rgba(101, 60, 244, 1);
 
 *,
 *::before,
@@ -258,14 +230,12 @@ h4 {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -278,27 +248,37 @@ a {
 button {
   user-select: none;
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  // max-width: 1370px;
+  // min-width: 320px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .button-fill-hover {
   display: flex;
+  padding: 10px 20px;
   align-items: center;
-  gap: 12px;
-  padding: 4px 24px 4px 24px;
-  background-color: $black;
-  color: $white;
-  border-radius: 16px;
-  font-size: 16px;
-  line-height: 36px;
+  gap: 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.28px;
   position: relative;
   transition: background-color 0.6s ease;
   overflow: hidden;
-  span {
-    background-image: url('../img/round.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 4px;
-    height: 4px;
+  .text {
+    position: relative;
+    z-index: 5;
   }
   &:after {
     content: '';
@@ -308,7 +288,6 @@ button {
     top: var(--mouse-y);
     left: var(--mouse-x);
     transform: translate(-50%, -50%);
-    background: rgba(rgb(255, 255, 255), 0.5);
     border-radius: 100%;
     transition: width 0.4s ease, height 0.4s ease;
   }
@@ -319,3 +298,48 @@ button {
     }
   }
 }
+
+// .button-fill-hover {
+//   display: flex;
+//   align-items: center;
+//   gap: 12px;
+//   padding: 4px 24px 4px 24px;
+//   background-color: $black;
+//   color: $white;
+//   border-radius: 16px;
+//   font-size: 16px;
+//   line-height: 36px;
+//   position: relative;
+//   transition: background-color 0.6s ease;
+//   overflow: hidden;
+//   .dot {
+//     background-image: url('../img/round.svg');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 4px;
+//     height: 4px;
+//   }
+//   .text {
+//     position: relative;
+//     z-index: 5;
+//   }
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     width: 0;
+//     height: 0;
+//     top: var(--mouse-y);
+//     left: var(--mouse-x);
+//     transform: translate(-50%, -50%);
+//     background: rgba(136, 117, 198, 0.5);
+//     border-radius: 100%;
+//     transition: width 0.4s ease, height 0.4s ease;
+//   }
+
+//   &:hover {
+//     &:after {
+//       width: 300px;
+//       height: 300px;
+//     }
+//   }
+// }
