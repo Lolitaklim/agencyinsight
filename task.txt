@@ -5,3 +5,7 @@
 //     "build": "parcel build src/index.html --public-url ./",
 //     "test": "echo \"Error: no test specified\" && exit 1"
 //   }
+
+обновлять сайтмап при добавлении страницы
+
+лейзи лоадинг кейсов

@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -130,88 +130,6 @@
                 `
         })
         .catch((error) => console.error('Error fetching data:', error))
-    </script>
-  </body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Подключите стили Swiper -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <style>
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-      a {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-pagination {
-        position: absolute;
-        bottom: 0px;
-        height: 6px;
-        border: 1px solid black;
-        margin-top: 20px;
-        border-radius: 4px;
-        width: 170px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      .swiper-pagination-progressbar-fill {
-        background-color: black;
-        height: 100%;
-        border-radius: 4px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="swiper main-news" id="mainNewsSwiper">
-      <div class="swiper-wrapper">
-        <a href="#" class="swiper-slide">
-          <img src="img/news-mob.png" alt="новость первая" />
-          <p class="title">Новость 1</p>
-          <p class="description">Описание новости 1</p>
-        </a>
-        <a href="#" class="swiper-slide">
-          <img src="img/news-mob.png" alt="новость первая" />
-          <p class="title">Новость 2</p>
-          <p class="description">Описание новости 1</p>
-        </a>
-        <a href="#" class="swiper-slide">
-          <img src="img/news-mob.png" alt="новость первая" />
-          <p class="title">Новость 3</p>
-          <p class="description">Описание новости 1</p>
-        </a>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- Подключите скрипты Swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const mainNewsSwiper = new Swiper('#mainNewsSwiper', {
-          // modules: [Swiper.Autoplay],
-          spaceBetween: 10,
-          loop: true,
-          autoplay: {
-            delay: 4000,
-            pauseOnMouseEnter: true,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-          },
-        })
-      })
     </script>
   </body>
 </html>

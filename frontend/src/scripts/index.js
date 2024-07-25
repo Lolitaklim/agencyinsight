@@ -14,19 +14,68 @@ new Typewriter('#typewriter', {
   autoStart: true,
   loop: true,
 })
-document.addEventListener('DOMContentLoaded', function () {
-  const mainNewsSwiper = new Swiper('#mainNewsSwiper', {
-    modules: [Autoplay, Pagination],
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      // disableOnInteraction: true,
-      pauseOnMouseEnter: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'progressbar',
-    },
-  })
-})
+
+let timeout
+const buttonsContainer = document.getElementById('mobile-buttons')
+const handleScroll = () => {
+  buttonsContainer.classList.add('scrolled')
+  clearTimeout(timeout)
+  timeout = setTimeout(() => {
+    buttonsContainer.classList.remove('scrolled')
+  }, 300)
+}
+const checkScreenWidth = () => {
+  if (window.innerWidth <= 500) {
+    window.addEventListener('scroll', handleScroll)
+  } else {
+    window.removeEventListener('scroll', handleScroll)
+    buttonsContainer.classList.remove('scrolled')
+  }
+}
+checkScreenWidth()
+window.addEventListener('resize', checkScreenWidth)
+
+const slideTemplate = (href, imageUrl, altImage, title, description) => `
+    <a href="${href}" class="swiper-slide">
+      <div class="container_img">
+        <img src="http://localhost:8080/uploads/${imageUrl}" alt="${altImage}"/>
+      </div>
+        <p class="title">${title}</p>
+        <p class="description">${description}</p>
+    </a>
+`
+async function loadSwiperData() {
+  try {
+    const response = await fetch('http://localhost:8080/get_swiper_hero.php')
+    const data = await response.json()
+    const swiperWrapper = document.getElementById('mainNewsSwiperWrapper')
+    const slidesHtml = data
+      .map((item) =>
+        slideTemplate(
+          `#${item.href}`,
+          item.image_url,
+          item.alt_image,
+          item.title,
+          item.description
+        )
+      )
+      .join('')
+    swiperWrapper.innerHTML = slidesHtml
+    const swiper = new Swiper('#mainNewsSwiper', {
+      modules: [Autoplay, Pagination],
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        pauseOnMouseEnter: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+    })
+  } catch (error) {
+    console.error('Ошибка загрузки данных для Swiper:', error)
+  }
+}
+loadSwiperData()

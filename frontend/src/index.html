@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,35 +11,34 @@
   </head>
   <body>
     <header class="container">
-      <div class="header">
-        <a class="logo" href="#">
-          <img src="./img/logo.svg" alt="Логотип Insight" />
-        </a>
-        <!-- <nav>
-          <a class="header-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
-          <div class="dropdown">
-            <a
-              class="header-link drop-link"
-              href="#"
-              data-b="Услуги"
-              data-f="Услуги"
-              ><span></span
-            ></a>
-            <div class="dropdown-content">
-              <a href="#">Ссылка 1</a>
-              <a href="#">Ссылка 2</a>
-              <a href="#">Ссылка 3</a>
-            </div>
-          </div>
-          <a class="header-link" href="#" data-b="Команда" data-f="Команда"></a>
-          <a class="header-link" href="#" data-b="Новости" data-f="Новости"></a>
-        </nav> -->
-        <div class="buttons">
-          <!-- <a class="button-fill-hover" href="#"
-            ><span class="dot"></span><span class="text">Связаться</span></a
-          > -->
-          <button class="menu-btn" id="toggleMenu"></button>
+      <a class="logo" href="#">
+        <img class="img-mob" src="./img/logo-mob.svg" alt="Логотип Insight" />
+        <img class="img-desk" src="./img/logo-desc.svg" alt="Логотип Insight" />
+      </a>
+      <nav>
+        <a class="header-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
+        <div class="dropdown">
+          <a
+            class="header-link drop-link"
+            href="#"
+            data-b="Услуги"
+            data-f="Услуги"
+            ><span></span
+          ></a>
+          <!-- <div class="dropdown-content">
+            <a href="#">Ссылка 1</a>
+            <a href="#">Ссылка 2</a>
+            <a href="#">Ссылка 3</a>
+          </div> -->
         </div>
+        <a class="header-link" href="#" data-b="Команда" data-f="Команда"></a>
+        <a class="header-link" href="#" data-b="Новости" data-f="Новости"></a>
+      </nav>
+      <div class="buttons">
+        <a class="button-fill-hover btn-contact" href="#"
+          ><span class="dot">•</span><span class="text">Связаться</span></a
+        >
+        <button class="menu-btn" id="toggleMenu"></button>
       </div>
       <!-- <div class="menu">
         <div id="panelLeft" class="panel left-panel">
@@ -100,30 +99,37 @@
         </div>
       </div> -->
     </header>
-    <div class="main">
-      <section class="hero container">
-        <div class="titles">
-          <h1>Маркетинговое агенство полного цикла</h1>
-          <h2>
-            Мы предлагаем <span class="nowrap">не услуги</span>, мы предлагаем
-            <span id="typewriter"></span>
-          </h2>
-          <h3>
-            Ваши цели — наши цели. Мы работаем в тесном сотрудничестве с
-            вами,<br />
-            чтобы разработать и реализовать решения, которые помогут вам достичь
-            успеха.
-          </h3>
-        </div>
-        <!-- <div class="buttons">
-          <a class="button-fill-hover btn-additional nowrap" href="#"
-            ><span class="dot">•</span>Заполнить бриф</a
-          >
-          <a class="button-fill-hover btn-contact" href="#"
-            ><span class="dot">•</span>Связаться</a
-          >
-        </div> -->
-        <!-- <div class="marquee">
+    <section class="hero container">
+      <div class="titles">
+        <h1>Маркетинговое агенство полного цикла</h1>
+        <h2>
+          Мы предлагаем <span class="nowrap">не услуги</span>, мы предлагаем
+          <span id="typewriter"></span>
+        </h2>
+        <h3>
+          Ваши цели — наши цели. Мы работаем
+          <span class="nowrap">в тесном</span> сотрудничестве с вами, чтобы
+          разработать <span class="nowrap">и реализовать</span> решения, которые
+          помогут вам достичь успеха.
+        </h3>
+      </div>
+      <div class="buttons" id="mobile-buttons">
+        <a class="button-fill-hover btn-additional nowrap" href="#"
+          ><span class="dot">•</span>Заполнить бриф</a
+        >
+        <a class="button-fill-hover btn-contact" href="#"
+          ><span class="dot">•</span>Связаться</a
+        >
+      </div>
+    </section>
+
+    <!-- <section class="main-news container">
+      <div class="swiper" id="mainNewsSwiper">
+        <div class="swiper-wrapper" id="mainNewsSwiperWrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+     <div class="marquee">
           <ul class="marquee-content">
             <li><i class="fab fa-github"></i></li>
             <li><i class="fab fa-dev"></i></li>
@@ -131,42 +137,9 @@
             <li><i class="fab fa-vuejs"></i></li>
           </ul>
         </div> -->
-      </section>
-      <section class="main-news container">
-        <div class="swiper" id="mainNewsSwiper">
-          <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide">
-              <img src="img/news-mob.png" alt="новость первая" />
-              <p class="title">Новость</p>
-              <p class="description">
-                Personalization for Mobile Applications - Its Role <br />and
-                Tips on Implementation
-              </p>
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="img/news-mob.png" alt="новость первая" />
-              <p class="title">Новость</p>
-              <p class="description">
-                Personalization for Mobile Applications - Its Role <br />and
-                Tips on Implementation
-              </p>
-            </a>
-            <a href="#" class="swiper-slide">
-              <img src="img/news-mob.png" alt="новость первая" />
-              <p class="title">Новость</p>
-              <p class="description">
-                Personalization for Mobile Applications - Its Role <br />and
-                Tips on Implementation
-              </p>
-            </a>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-    </div>
     <a href="test.html">test</a>
+    <script src="./scripts/globalVariables.js"></script>
     <script src="./scripts/headerMenu.js"></script>
-
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

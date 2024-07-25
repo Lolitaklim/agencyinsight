@@ -4,7 +4,8 @@ $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
 
 .hero {
-  height: 100vh;
+  height: 70vh;
+  margin-bottom: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,27 +14,28 @@ $purple: rgba(101, 60, 244, 1);
     color: $black;
     display: flex;
     flex-direction: column;
+    gap: 2.8vw;
     h1 {
       opacity: 60%;
-      font-size: 8px;
+      font-size: 2.6vw;
       font-weight: 500;
-      line-height: 9px;
+      line-height: 110%;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.1vw;
     }
     h2 {
       font-size: 8.8vw;
-      // font-size: 28px;
       font-weight: 500;
       line-height: 110%;
       letter-spacing: -0.7vw;
     }
     h3 {
       opacity: 60%;
-      font-size: 12px;
+      font-size: 3.7vw;
       font-weight: 400;
-      line-height: 17px;
-      letter-spacing: -0.24px;
+      line-height: 140%;
+      letter-spacing: -0.07vw;
+      padding-right: 24px;
     }
   }
   .buttons {
@@ -44,6 +46,16 @@ $purple: rgba(101, 60, 244, 1);
     display: flex;
     padding: 6px 12px;
     justify-content: space-between;
+    transition: opacity 0.5s ease-in-out;
+
+    .button-fill-hover {
+      padding: 3vw 6vw;
+      gap: 3vw;
+      border-radius: 3.6vw;
+      font-size: 4.2vw;
+      line-height: 100%;
+      letter-spacing: 0vw;
+    }
     .btn-additional {
       background-color: $black;
       color: $white;
@@ -63,6 +75,17 @@ $purple: rgba(101, 60, 244, 1);
       &:after {
         background: rgba(136, 117, 198, 0.5); //?
       }
+    }
+  }
+  .scrolled {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 400px) {
+  .hero {
+    .buttons {
+      padding: 8px 18px;
     }
   }
 }

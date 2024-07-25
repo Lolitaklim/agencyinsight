@@ -253,8 +253,8 @@ button {
 }
 
 .container {
-  // max-width: 1370px;
-  // min-width: 320px;
+  max-width: 1440px;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
@@ -299,47 +299,30 @@ button {
   }
 }
 
-// .button-fill-hover {
-//   display: flex;
-//   align-items: center;
-//   gap: 12px;
-//   padding: 4px 24px 4px 24px;
-//   background-color: $black;
-//   color: $white;
-//   border-radius: 16px;
-//   font-size: 16px;
-//   line-height: 36px;
-//   position: relative;
-//   transition: background-color 0.6s ease;
-//   overflow: hidden;
-//   .dot {
-//     background-image: url('../img/round.svg');
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: 4px;
-//     height: 4px;
-//   }
-//   .text {
-//     position: relative;
-//     z-index: 5;
-//   }
-//   &:after {
-//     content: '';
-//     position: absolute;
-//     width: 0;
-//     height: 0;
-//     top: var(--mouse-y);
-//     left: var(--mouse-x);
-//     transform: translate(-50%, -50%);
-//     background: rgba(136, 117, 198, 0.5);
-//     border-radius: 100%;
-//     transition: width 0.4s ease, height 0.4s ease;
-//   }
+@media (min-width: 400px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
 
-//   &:hover {
-//     &:after {
-//       width: 300px;
-//       height: 300px;
-//     }
-//   }
-// }
+@media (min-width: 500px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}

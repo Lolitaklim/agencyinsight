@@ -4,32 +4,185 @@ $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
 
 header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  .header {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    img {
+      width: 45vw;
+      height: auto;
+    }
+    .img-desk {
+      display: none;
+    }
+  }
+  nav {
+    display: none;
+  }
+  .buttons {
+    .btn-contact {
+      display: none;
+    }
+    .menu-btn {
+      width: 10vw;
+      height: 10vw;
+      background-image: url('../img/burger-menu.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  header {
+    padding: 34px 0px;
+  }
+}
+
+@media (min-width: 550px) {
+  header {
     padding: 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .logo {
       img {
-        width: 138px;
-        height: 28px;
+        width: 176px;
+        height: 36px;
+      }
+      .img-mob {
+        display: none;
+      }
+      .img-desk {
+        display: block;
       }
     }
     .buttons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .btn-contact {
+        display: flex;
+        background-color: $black;
+        color: $white;
+        padding: 12px 24px 12px 22px;
+        gap: 10px;
+        border-radius: 16px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.32px;
+        .dot {
+          color: $purple;
+        }
+        &:after {
+          background: rgba(136, 117, 198, 0.5); //?
+        }
+      }
       .menu-btn {
-        width: 32px;
-        height: 32px;
-        background-image: url('../img/burger-menu.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-image: none;
+        position: relative;
+        display: flex;
+        width: 93px;
+        height: 40px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 16px;
+        border: 2px solid #e7e7e7;
+        &::before {
+          content: 'Меню';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $black;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: -0.32px;
+        }
       }
     }
   }
 }
+
+@media (min-width: 900px) {
+  header {
+    nav {
+      display: flex;
+      gap: 36px;
+      .header-link {
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: -0.32px;
+        position: relative;
+        overflow: hidden;
+        &:hover:after {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        &:hover:before {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        &:after {
+          top: 0;
+          left: 0;
+          display: block;
+          transition: 0.3s;
+          position: absolute;
+          content: attr(data-b);
+          transform: translateY(-100%);
+        }
+        &:before {
+          top: 0;
+          left: 0;
+          opacity: 1;
+          display: block;
+          transition: 0.3s;
+          position: relative;
+          content: attr(data-f);
+          transform: translateY(0);
+        }
+      }
+      .dropdown {
+        position: relative;
+        .drop-link {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          span {
+            background-image: url('../img/chevron-down.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease;
+          }
+        }
+        &:hover span {
+          transform: rotate(180deg);
+        }
+        // .dropdown-content {
+        //   display: none;
+        //   position: absolute;
+        //   background-color: #f9f9f9;
+        //   min-width: 100px;
+        //   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        //   z-index: 1;
+        //   a {
+        //     display: block;
+        //     &:hover {
+        //       background-color: #f1f1f1;
+        //     }
+        //   }
+        // }
+        // &:hover .dropdown-content {
+        //   display: block;
+        // }
+        // &:hover .drop-link {
+        // }
+      }
+    }
+  }
+}
+
 // header {
 //   border-bottom: 1px solid rgba(233, 237, 244, 1);
 //   .header {
