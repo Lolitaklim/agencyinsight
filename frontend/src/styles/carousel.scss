@@ -1,0 +1,36 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+  .carousel-container {
+    white-space: nowrap;
+    .carousel-item {
+      display: inline-block;
+      width: 167px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .carousel {
+    padding-top: 32px;
+    .carousel-container {
+      .carousel-item {
+        width: 251px;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .carousel {
+    padding-top: 40px;
+    .carousel-container {
+      .carousel-item {
+        width: 334px;
+      }
+    }
+  }
+}

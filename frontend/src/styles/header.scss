@@ -119,7 +119,7 @@ header {
         }
         &:hover:before {
           opacity: 0;
-          transform: translateY(100%);
+          transform: translateY(110%);
         }
         &:after {
           top: 0;
@@ -128,7 +128,7 @@ header {
           transition: 0.3s;
           position: absolute;
           content: attr(data-b);
-          transform: translateY(-100%);
+          transform: translateY(-110%);
         }
         &:before {
           top: 0;

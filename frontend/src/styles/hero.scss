@@ -5,7 +5,7 @@ $purple: rgba(101, 60, 244, 1);
 
 .hero {
   height: 70vh;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,7 @@ $purple: rgba(101, 60, 244, 1);
   }
   .buttons {
     position: fixed;
+    z-index: 2;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -47,7 +48,6 @@ $purple: rgba(101, 60, 244, 1);
     padding: 6px 12px;
     justify-content: space-between;
     transition: opacity 0.5s ease-in-out;
-
     .button-fill-hover {
       padding: 3vw 6vw;
       gap: 3vw;
@@ -86,6 +86,82 @@ $purple: rgba(101, 60, 244, 1);
   .hero {
     .buttons {
       padding: 8px 18px;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .hero {
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: 76px;
+    flex-direction: column;
+    .titles {
+      align-items: center;
+      gap: 0;
+      text-align: center;
+      h1 {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        word-spacing: 4px;
+      }
+      h2 {
+        margin-top: 6px;
+        font-size: 48px;
+        letter-spacing: -3.36px;
+        max-width: 586px;
+      }
+      h3 {
+        margin-top: 12px;
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        padding-right: 0;
+        max-width: 442px;
+      }
+    }
+    .buttons {
+      margin-top: 34px;
+      position: static;
+      padding: 0;
+      gap: 8px;
+      justify-content: center;
+      flex-direction: row-reverse;
+      .button-fill-hover {
+        padding: 12px 24px;
+        gap: 12px;
+        border-radius: 16px;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    .titles {
+      h2 {
+        font-size: 60px;
+        letter-spacing: -4.2px;
+        max-width: 730px;
+      }
+      h3 {
+        letter-spacing: -0.28px;
+        max-width: 640px;
+      }
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    .titles {
+      h2 {
+        max-width: 730px;
+      }
     }
   }
 }
