@@ -1,6 +1,6 @@
 <?php
 
-require 'db_config.php';
+require './../db_config.php';
 
 /*
     Этот запрос выбирает и объединяет данные из таблиц 'swiper_hero', 'cases' и 'news', используя LEFT JOIN. 

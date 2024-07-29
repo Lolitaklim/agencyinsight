@@ -20,7 +20,7 @@ $purple: rgba(101, 60, 244, 1);
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 16px;
+        border-radius: 4.96vw;
         img {
           width: 100%;
           height: auto;
@@ -84,7 +84,6 @@ $purple: rgba(101, 60, 244, 1);
       a {
         .container_img {
           max-height: 258px;
-          border-radius: 24px;
         }
       }
       .swiper-pagination {
