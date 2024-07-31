@@ -19,11 +19,11 @@ CASE
     WHEN sh.item_type = 'news' THEN n.alt_image
 END AS alt_image,
 CASE 
-    WHEN sh.item_type = 'case' THEN c.title
+     WHEN sh.item_type = 'case' THEN cc.category_name
     WHEN sh.item_type = 'news' THEN n.title
 END AS title,
 CASE 
-    WHEN sh.item_type = 'case' THEN c.description
+    WHEN sh.item_type = 'case' THEN c.title
     WHEN sh.item_type = 'news' THEN n.description
 END AS description,
 CASE 
@@ -36,6 +36,8 @@ LEFT JOIN
 cases c ON sh.item_type = 'case' AND sh.item_id = c.id
 LEFT JOIN 
 news n ON sh.item_type = 'news' AND sh.item_id = n.id
+LEFT JOIN 
+    case_categories cc ON c.category_id = cc.id
 ORDER BY 
 sh.display_order;";
 

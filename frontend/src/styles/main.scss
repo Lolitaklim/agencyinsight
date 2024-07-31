@@ -300,6 +300,25 @@ button {
   }
 }
 
+.vk {
+  background-image: url('./../img/vk.svg');
+}
+.telegram {
+  background-image: url('./../img/telegram.svg');
+}
+.whatsapp {
+  background-image: url('./../img/whatsapp.svg');
+}
+.pinterest {
+  background-image: url('./../img/pinterest.svg');
+}
+.yandex_zen {
+  background-image: url('./../img/yandex_zen.svg');
+}
+.tik_tok {
+  background-image: url('./../img/tik_tok.svg');
+}
+
 @media (min-width: 400px) {
   .container {
     padding-left: 18px;

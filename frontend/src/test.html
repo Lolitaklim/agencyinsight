@@ -23,53 +23,85 @@
   <body>
     <div class="grid-container" id="container"></div>
     <script>
-      const blocks = [
-        { name: 1, value: 1 },
-        { name: 2, value: 1 },
-        { name: 3, value: 2 },
-        { name: 4, value: 2 },
-        // { name: 5, value: 2 },
-        // { name: 6, value: 1 },
-        // { name: 7, value: 2 },
-        // { name: 8, value: 2 },
-      ]
-
-      function Cases() {
-        const container = document.getElementById('container')
-        // let rowLength = 0
-        const maxRowLength = 3
-        const layout = []
-
-        blocks.forEach((block) => {
-          const itemName = `item-${block.name}`
-          const count = block.value === 1 ? 1 : 2
-          layout.push(...Array(count).fill(itemName))
-
-          const div = document.createElement('div')
-          div.classList.add('item')
-          div.textContent = block.name
-          div.style.gridArea = `item-${block.name}`
-          container.appendChild(div)
+      const slideTemplate = (
+        href,
+        imageUrl,
+        altImage,
+        title,
+        description,
+        cssClass
+      ) => `
+    <a href="${href}" class="${cssClass}">
+      <div class="container_img">
+        <img src="${SERVER_URL}/uploads/${imageUrl}" alt="${altImage}"/>
+      </div>
+        <p class="title">${title}</p>
+        <p class="description">${description}</p>
+    </a>
+`
+      function createSwiper(element) {
+        const swiper = new Swiper(element, {
+          modules: [Autoplay, Pagination],
+          spaceBetween: 10,
+          loop: true,
+          autoplay: {
+            delay: 4000,
+            pauseOnMouseEnter: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+          },
         })
-
-        if (layout.length % maxRowLength > 0) {
-          const missingCells = maxRowLength - (layout.length % maxRowLength)
-          layout.push(...Array(missingCells).fill('.'))
-        }
-
-        let gridTemplateAreas = ''
-
-        for (let i = 0; i < layout.length; i += maxRowLength) {
-          const row = layout.slice(i, i + maxRowLength)
-          if ((i / maxRowLength) % 2 === 1) {
-            row.reverse()
-          }
-          gridTemplateAreas += `'${row.join(' ')}' `
-        }
-        container.style.gridTemplateAreas = gridTemplateAreas.trim()
-        console.log(gridTemplateAreas.trim())
       }
-      Cases()
+
+      function slidesHtml(cssClass) {
+        return state.dataNews
+          .map((item) =>
+            slideTemplate(
+              `#${item.href}`,
+              item.image_url,
+              item.alt_image,
+              item.title,
+              item.description,
+              cssClass
+            )
+          )
+          .join('')
+      }
+      async function loadSwiperData(
+        element,
+        wrapper,
+        script,
+        cards = undefined
+      ) {
+        try {
+          const response = await fetch(`${SERVER_URL}/api/${script}`)
+          state.dataNews = await response.json()
+          const swiperWrapper = document.getElementById(wrapper)
+
+          swiperWrapper.innerHTML = slidesHtml('swiper-slide')
+          if (cards) {
+            const newsCards = document.getElementById(cards)
+            newsCards.innerHTML = slidesHtml('card')
+          }
+
+          createSwiper(element)
+        } catch (error) {
+          console.error('Ошибка загрузки данных для Swiper:', error)
+        }
+      }
+      loadSwiperData(
+        '#newsSwiper',
+        'newsSwiperWrapper',
+        'get_homepage_news.php',
+        'newsCards'
+      )
+      loadSwiperData(
+        '#mainNewsSwiper',
+        'mainNewsSwiperWrapper',
+        'get_swiper_hero.php'
+      )
     </script>
   </body>
 </html>

@@ -1,22 +1,14 @@
 // Добавление обработчика для обновления при изменении размера окна (updateCasesDisplay) => handleResize
 
 const casesContainer = document.getElementById('casesContainer')
-const state = {}
 
-const caseTemplate = (
-  href,
-  imageUrl,
-  altImage,
-  title,
-  description,
-  gridArea
-) => `
+const caseTemplate = (href, imageUrl, altImage, title, category, gridArea) => `
     <a href="${href}" class="case" style="grid-area: ${gridArea}">
         <div class="container_img">
             <img src="${SERVER_URL}/uploads/${imageUrl}" alt="${altImage}" />
         </div>
+        <p class="category">${category}</p>
         <p class="title">${title}</p>
-        <p class="description">${description}</p>
     </a>
 `
 
@@ -46,11 +38,14 @@ async function loadCases() {
     const response = await fetch(`${SERVER_URL}/api/get_homepage_cases.php`)
     state.data = await response.json()
     state.layout = []
+
+    // handleResize
     updateCasesDisplay()
   } catch (error) {
     console.error('Ошибка загрузки данных для Cases:', error)
   }
 }
+
 loadCases()
 
 // Обновление отображения случаев в зависимости от ширины экрана
@@ -105,7 +100,7 @@ function displayCases(cases) {
         item.image_url,
         item.alt_image,
         item.title,
-        item.description,
+        item.category,
         `item-${item.display_order}`
       )
     })

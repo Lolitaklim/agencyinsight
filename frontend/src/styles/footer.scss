@@ -1,0 +1,534 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.footer {
+  margin-top: -12vw;
+  background-color: $black;
+  color: $white;
+  padding-top: 21.89vw;
+  padding-bottom: 6.58vw;
+  a {
+    color: $white;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      img {
+        width: 34.09vw;
+        height: 7.51vw;
+      }
+    }
+    .title-footer {
+      margin-top: 7.7vw;
+      font-size: 8.76vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.53vw;
+    }
+    .description {
+      margin-top: 1.25vw;
+      font-size: 3.75vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.15vw;
+      max-width: 72.24vw;
+    }
+    .open-form-btn {
+      margin-top: 5.63vw;
+      width: 100%;
+      display: flex;
+      padding: 5vw 3.75vw;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5vw;
+      border-radius: 4.38vw;
+      background: $white;
+      color: $black;
+      font-size: 4.38vw;
+      line-height: 100%;
+      letter-spacing: -0.09vw;
+      span {
+        color: $purple;
+      }
+    }
+    .info {
+      margin-top: 10.01vw;
+      display: flex;
+      gap: 24.39vw;
+      .contacts {
+        .title {
+          font-size: 6.25vw;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -0.05vw;
+        }
+        a {
+          display: block;
+          font-size: 3.75vw;
+          line-height: 110%;
+          letter-spacing: -0.08vw;
+          text-decoration-line: underline;
+          text-underline-offset: 3px;
+        }
+        .mail {
+          margin-top: 3.75vw;
+        }
+        .tel {
+          margin-top: 5vw;
+        }
+        .additional-tel {
+          margin-top: 3.75vw;
+        }
+      }
+      .footer-menu {
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4.38vw;
+        a {
+          font-size: 3.75vw;
+          line-height: 110%;
+          letter-spacing: -0.08vw;
+        }
+      }
+    }
+    .follow {
+      margin-top: 10.01vw;
+      .title {
+        font-size: 6.25vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.05vw;
+      }
+      .links {
+        margin-top: 5vw;
+        display: flex;
+        gap: 3.13vw;
+        a {
+          width: 10.01vw;
+          height: 10.01vw;
+        }
+      }
+    }
+    .company-info {
+      margin-top: 12.51vw;
+      font-size: 3.13vw;
+      line-height: 120%;
+      letter-spacing: 0.05vw;
+    }
+    .privacy-policy {
+      margin-top: 7.51vw;
+      padding-left: 0.4vw;
+      font-size: 3.13vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 0.15vw;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-transform: uppercase;
+    }
+    .copyright {
+      margin-top: 5vw;
+      font-size: 3.13vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 0.1vw;
+      text-transform: uppercase;
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .footer {
+    margin-top: -30px;
+    padding-top: 93px;
+    padding-right: 39px; //переопределяет контейнер
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: flex;
+      gap: 36px;
+      .left {
+        a {
+          display: block;
+        }
+        .title-footer {
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -1.92px;
+        }
+        .description {
+          margin-top: 8px;
+          width: 260.25px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -0.56px;
+        }
+        .mail {
+          margin-top: 50px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -0.72px;
+          text-decoration-line: underline;
+          text-underline-offset: 3px;
+        }
+        .tel {
+          margin-top: 24px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -0.72px;
+        }
+        .additional-tel {
+          margin-top: 12px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: -0.72px;
+        }
+        .company-info {
+          margin-top: 36px;
+          font-size: 10px;
+          line-height: 120%;
+          letter-spacing: -0.2px;
+        }
+        .privacy-policy {
+          margin-top: 28px;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 110%;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+          text-underline-offset: 3px;
+        }
+        .copyright {
+          margin-top: 10px;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 110%;
+          text-transform: uppercase;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        form {
+          display: flex;
+          flex-direction: column;
+          .title {
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -0.8px;
+          }
+          input,
+          textarea {
+            padding: 12px 18px;
+            border-radius: 12px;
+            border: 1px solid $white;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -0.56px;
+            background-color: $black;
+            &::placeholder {
+              opacity: 0.5;
+            }
+          }
+          .inputs-container {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            .main-inputs {
+              display: flex;
+              gap: 6px;
+              .name {
+                width: 43%;
+              }
+              .tel {
+                width: 57%;
+              }
+            }
+            .task {
+              height: 99px;
+            }
+          }
+          .form-footer {
+            margin-top: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            .submit {
+              display: flex;
+              padding: 12px 24px;
+              align-items: center;
+              gap: 7.875px;
+              border-radius: 10.5px;
+              background: $white;
+              color: $black;
+              font-size: 12px;
+              line-height: 100%;
+              letter-spacing: -0.24px;
+            }
+            p {
+              font-size: 10px;
+              line-height: 120%;
+              letter-spacing: -0.2px;
+              a {
+                text-decoration-line: underline;
+                text-underline-offset: 3px;
+              }
+            }
+          }
+        }
+        .follow {
+          padding: 9px 18px;
+          border-radius: 10.5px;
+          border: 1px solid $white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: -0.72px;
+          }
+          .links {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            a {
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    margin-top: -40px;
+    padding-top: 130px;
+    padding-right: 50px; //переопределяет контейнер
+    .desktop {
+      gap: 31px;
+      .left {
+        .title-footer {
+          font-size: 40px;
+          letter-spacing: -2.4px;
+        }
+        .description {
+          width: 347px;
+          font-size: 18px;
+          letter-spacing: -0.72px;
+        }
+        .mail {
+          margin-top: 67px;
+          font-size: 24px;
+          letter-spacing: -0.96px;
+        }
+        .tel {
+          margin-top: 32px;
+          font-size: 24px;
+          letter-spacing: -0.96px;
+        }
+        .additional-tel {
+          margin-top: 16px;
+          font-size: 24px;
+          letter-spacing: -0.96px;
+        }
+        .company-info {
+          margin-top: 52px;
+          font-size: 14px;
+          letter-spacing: -0.28px;
+        }
+        .privacy-policy {
+          margin-top: 36px;
+          font-size: 14px;
+        }
+        .copyright {
+          margin-top: 16px;
+          font-size: 14px;
+          width: 358px;
+        }
+      }
+      .right {
+        gap: 60px;
+        form {
+          .title {
+            margin-top: 7px;
+            font-size: 24px;
+            letter-spacing: -0.96px;
+          }
+          input,
+          textarea {
+            padding: 15px 24px;
+            border-radius: 16px;
+            font-size: 18px;
+            letter-spacing: -0.72px;
+          }
+          .inputs-container {
+            margin-top: 20px;
+            gap: 8px;
+            .task {
+              height: 132px;
+            }
+          }
+          .form-footer {
+            margin-top: 20px;
+            gap: 12px;
+            .submit {
+              padding: 16px 32px;
+              gap: 10.5px;
+              border-radius: 14px;
+              font-size: 14px;
+              letter-spacing: -0.28px;
+            }
+            p {
+              font-size: 14px;
+              letter-spacing: -0.28px;
+            }
+          }
+        }
+        .follow {
+          padding: 12px 24px;
+          border-radius: 14px;
+          .title {
+            font-size: 24px;
+            letter-spacing: -0.96px;
+          }
+          .links {
+            gap: 12px;
+            a {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: -40px;
+    padding-top: 164px;
+    padding-right: 70px;
+    .desktop {
+      gap: 60px;
+      .left {
+        .title-footer {
+          font-size: 56px;
+          letter-spacing: -3.3px;
+        }
+        .description {
+          margin-top: 12px;
+          width: 487px;
+          font-size: 24px;
+          letter-spacing: -0.96px;
+        }
+        .mail {
+          margin-top: 100px;
+          font-size: 36px;
+          letter-spacing: -1.44px;
+        }
+        .tel {
+          margin-top: 40px;
+          font-size: 36px;
+          letter-spacing: -1.44px;
+        }
+        .additional-tel {
+          margin-top: 20px;
+          font-size: 36px;
+          letter-spacing: -1.44px;
+        }
+        .company-info {
+          margin-top: 72px;
+          font-size: 18px;
+          letter-spacing: -0.36px;
+        }
+        .privacy-policy {
+          margin-top: 52px;
+          font-size: 18px;
+        }
+        .copyright {
+          margin-top: 20px;
+          font-size: 18px;
+          width: 459px;
+        }
+      }
+      .right {
+        gap: 85px;
+        form {
+          .title {
+            margin-top: 12px;
+            font-size: 36px;
+            letter-spacing: -1.44px;
+          }
+          input,
+          textarea {
+            padding: 24px 32px;
+            border-radius: 22.5px;
+            font-size: 24px;
+            letter-spacing: -0.96px;
+          }
+          .inputs-container {
+            margin-top: 24px;
+            .task {
+              height: 184px;
+            }
+          }
+          .form-footer {
+            margin-top: 28px;
+            gap: 16px;
+            .submit {
+              padding: 24px 40px;
+              gap: 14px;
+              border-radius: 19.688px;
+              font-size: 24px;
+              letter-spacing: -0.48px;
+            }
+            p {
+              font-size: 16px;
+              letter-spacing: -0.32px;
+            }
+          }
+        }
+        .follow {
+          padding: 17px 34px;
+          border-radius: 20px;
+          .title {
+            font-size: 32px;
+            letter-spacing: -1.28px;
+          }
+          .links {
+            gap: 17px;
+            a {
+              width: 45px;
+              height: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

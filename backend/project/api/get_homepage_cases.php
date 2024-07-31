@@ -7,8 +7,9 @@ require './../db_config.php';
 */
 
 
-$sql = "SELECT c.href, c.alt_image, c.title, c.description, c.image_url, hc.display_order, hc.block_size
-FROM cases c JOIN homepage_cases hc ON c.id = hc.item_id ORDER BY hc.display_order;";
+// $sql = "SELECT c.href, c.alt_image, c.title, c.description, c.image_url, hc.display_order, hc.block_size
+// FROM cases c JOIN homepage_cases hc ON c.id = hc.item_id ORDER BY hc.display_order;";
+$sql = "SELECT c.href, c.alt_image, c.title, cc.category_name AS category, c.image_url, hc.display_order, hc.block_size FROM cases c JOIN homepage_cases hc ON c.id = hc.item_id JOIN case_categories cc ON c.category_id = cc.id ORDER BY hc.display_order;";
 
 $result = $conn->query($sql);
 $data = [];
@@ -18,7 +19,7 @@ if ($result->num_rows > 0) {
         $data[] = array(
             'href' => $row['href'],
             'title' => $row['title'],
-            'description' => $row['description'],
+            'category' => $row['category'],
             'alt_image' => $row['alt_image'],
             'image_url' => $row['image_url'],
             'display_order' => $row['display_order'],

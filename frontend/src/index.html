@@ -6,12 +6,14 @@
     <title>главная</title>
     <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="stylesheet" href="./styles/header.scss" />
+    <link rel="stylesheet" href="./styles/formLeaving.scss" />
     <link rel="stylesheet" href="./styles/hero.scss" />
     <link rel="stylesheet" href="./styles/mainNews.scss" />
     <link rel="stylesheet" href="./styles/carousel.scss" />
     <link rel="stylesheet" href="./styles/cases.scss" />
     <link rel="stylesheet" href="./styles/services.scss" />
     <link rel="stylesheet" href="./styles/news.scss" />
+    <link rel="stylesheet" href="./styles/footer.scss" />
   </head>
   <body>
     <header class="container">
@@ -103,7 +105,7 @@
         </div>
       </div> -->
     </header>
-    <!-- <section class="hero container">
+    <section class="hero container">
       <div class="titles">
         <h1>Маркетинговое агенство полного цикла</h1>
         <h2>
@@ -125,21 +127,21 @@
           ><span class="dot">•</span>Связаться</a
         >
       </div>
-    </section> -->
+    </section>
     <section class="main-news container">
       <div class="swiper" id="mainNewsSwiper">
         <div class="swiper-wrapper" id="mainNewsSwiperWrapper"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <!-- <section class="carousel" id="carousel" role="region">
+    <section class="carousel" id="carousel" role="region">
       <div class="carousel-container" id="carouselContainer" role="list">
         <img src="./img/liftoff.svg" class="carousel-item" role="listitem" />
         <img src="./img/customer.svg" class="carousel-item" role="listitem" />
         <img src="./img/appsfluer.svg" class="carousel-item" role="listitem" />
       </div>
-    </section> -->
-    <!-- <section class="cases container">
+    </section>
+    <section class="cases container">
       <h2>Кейсы</h2>
       <div class="cases-container" id="casesContainer"></div>
       <div class="mobile-btn">
@@ -147,7 +149,7 @@
           ><span class="dot">•</span>Смотреть все</a
         >
       </div>
-    </section> -->
+    </section>
     <section class="services container">
       <h2>Услуги</h2>
       <div class="cards">
@@ -165,7 +167,7 @@
                 экономика бизнса + продажи, применяем цепочки и воронки,
                 котороые сработают конкретно у вас
               </p>
-              <div class="footer">
+              <div class="card-footer">
                 <span>Контекстная реклама</span>
                 <span>SMM</span>
                 <span>Таргетированная реклама</span>
@@ -180,7 +182,7 @@
             </div>
             <div class="content">
               <p>Тут все понятно</p>
-              <div class="footer">
+              <div class="card-footer">
                 <span>Структура</span>
                 <span>Прототип</span>
                 <span>Дизайн-концепции</span>
@@ -196,7 +198,7 @@
             </div>
             <div class="content">
               <p>Часто бывают мелкие задачки текстовые</p>
-              <div class="footer">
+              <div class="card-footer">
                 <span>Статьи</span>
                 <span>Гайды</span>
                 <span>Рассылки</span>
@@ -212,7 +214,7 @@
             </div>
             <div class="content">
               <p>Можем переводить</p>
-              <div class="footer">
+              <div class="card-footer">
                 <span>Английский язык</span>
               </div>
             </div>
@@ -227,7 +229,7 @@
             </div>
             <div class="content">
               <p>Тут про дизайн</p>
-              <div class="footer">
+              <div class="card-footer">
                 <span>Логотипы</span>
                 <span>Фирменный стиль</span>
                 <span>Дизайн рекламных материалов</span>
@@ -254,7 +256,7 @@
               <span></span>
             </div>
             <p>Берем ваш маркетинговый отдел в свои руки</p>
-            <div class="footer">
+            <div class="card-footer">
               <span>Аналитика</span>
               <span>Маркетинговая стратегия</span>
               <span>Подбор рекламных инструментов</span>
@@ -270,38 +272,198 @@
     <section class="news container">
       <h2>Новости</h2>
       <div class="swiper" id="newsSwiper">
-        <!-- <div class="swiper-wrapper" id="newsSwiperWrapper"></div> -->
+        <div class="swiper-wrapper" id="newsSwiperWrapper"></div>
         <div class="swiper-pagination"></div>
       </div>
+      <div class="news-cards" id="newsCards"></div>
     </section>
-    <a href="test.html">test</a>
+    <footer class="container footer">
+      <div class="mobile">
+        <a class="logo" href="#">
+          <img src="./img/logo-mob-white.svg" alt="Логотип Insight" />
+        </a>
+        <p class="title-footer">Готовы начать?</p>
+        <p class="description">
+          Свяжитесь с нами сегодня и выведите свою рекламу на новый уровень!
+        </p>
+        <button id="openFormMobileBtn" class="open-form-btn">
+          <span>•</span>Стать нашим партнером
+        </button>
+        <div class="info">
+          <div class="contacts">
+            <p class="title">Контакты</p>
+            <a class="mail" href="mailto:info@agencyinsight.ru"
+              >info@agencyinsight.ru</a
+            >
+            <a class="tel" href="tel:+79237011362">+7 (923) 701-13-62</a>
+            <a class="additional-tel" href="tel:+73832840858"
+              >+7 (383) 284-08-58</a
+            >
+          </div>
+          <div class="footer-menu">
+            <a href="#">Кейсы</a>
+            <a href="#">Новости</a>
+            <a href="#">Команда</a>
+            <a href="#">Услуги</a>
+          </div>
+        </div>
+        <div class="follow">
+          <p class="title">Следите за нами</p>
+          <div class="links">
+            <a class="vk" href="#"></a>
+            <a class="telegram" href="#"></a>
+            <a class="whatsapp" href="#"></a>
+            <a class="pinterest" href="#"></a>
+            <a class="yandex_zen" href="#"></a>
+            <a class="tik_tok" href="#"></a>
+          </div>
+        </div>
+        <div class="company-info">
+          ООО Диджитал агентство “Инсайт” <br />ОГРН 1165476075973630102,
+          <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
+          д.43, оф. блок 1, оф 7
+        </div>
+        <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+        <p class="copyright">© Insight digital agency. All rights reserved</p>
+      </div>
+      <div class="desktop">
+        <div class="left">
+          <p class="title-footer">Готовы начать?</p>
+          <p class="description">
+            Свяжитесь с нами сегодня и выведите свою рекламу на новый уровень!
+          </p>
+          <a class="mail" href="mailto:info@agencyinsight.ru"
+            >info@agencyinsight.ru</a
+          >
+          <a class="tel" href="tel:+79237011362">+7 (923) 701-13-62</a>
+          <a class="additional-tel" href="tel:+73832840858"
+            >+7 (383) 284-08-58</a
+          >
+          <div class="company-info">
+            ООО Диджитал агентство “Инсайт” <br />ОГРН 1165476075973630102,
+            <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
+            д.43, оф. блок 1, оф 7
+          </div>
+          <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+          <p class="copyright">© Insight digital agency. All rights reserved</p>
+        </div>
+        <div class="right">
+          <!-- <div class="footer-form"> -->
+          <form>
+            <p class="title">Ваш контакт</p>
+            <div class="inputs-container">
+              <div class="main-inputs">
+                <input
+                  class="name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  class="tel"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="+7 (000) 000-00-00"
+                  required
+                />
+              </div>
+              <input
+                class="email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ваша почта"
+                required
+              />
+              <textarea
+                class="task"
+                name="task"
+                id="task"
+                placeholder="Опишите вашу задачу (необязательно)"
+              ></textarea>
+            </div>
+            <div class="form-footer">
+              <button class="submit" type="submit">
+                <span>•</span><span class="nowrap">Стать нашим партнером</span>
+              </button>
+              <p>
+                Нажав на кнопку, соглашаюсь <br />на обработку
+                <a href="#">персональных данных</a>
+              </p>
+            </div>
+          </form>
+          <!-- </div> -->
+          <div class="follow">
+            <p class="title">Следите за нами</p>
+            <div class="links">
+              <a class="vk" href="#"></a>
+              <a class="telegram" href="#"></a>
+              <a class="whatsapp" href="#"></a>
+              <a class="pinterest" href="#"></a>
+              <a class="yandex_zen" href="#"></a>
+              <a class="tik_tok" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo
-      exercitationem distinctio nobis voluptates iure earum aperiam nesciunt
-      voluptatem ex corporis assumenda eaque, quidem tempore neque ut dolorum
-      quas cum. Distinctio esse ducimus porro sunt ipsum voluptatem consectetur
-      fuga totam tenetur! Fugiat, nihil saepe quo cupiditate amet dolore esse id
-      dolorem, eligendi eveniet cum! Ut exercitationem illum mollitia a vel.
-      Sapiente, id delectus porro cupiditate unde corrupti accusamus assumenda
-      explicabo cum amet optio eaque odit qui mollitia aperiam. Similique
-      expedita velit, ut tenetur necessitatibus inventore harum! Quaerat quia
-      possimus excepturi. Sunt vel sit quas cumque est. Magni reprehenderit
-      labore necessitatibus quos repellat ullam repellendus error ex
-      consequuntur nam. Dolores eveniet corporis sequi mollitia iure eum fugiat
-      natus deserunt reiciendis rem. Voluptate consequatur maxime soluta et
-      veritatis? Amet, delectus facere! Quaerat inventore, distinctio quidem
-      magni aspernatur esse molestias cupiditate vel ipsa? Cumque itaque
-      architecto optio! Alias illum molestiae esse expedita facilis. Eaque
-      exercitationem assumenda porro tenetur natus similique commodi libero
-      consectetur error optio quisquam voluptates quos minima ipsa dolorem,
-      accusantium veniam! Accusamus repellendus minima blanditiis enim ea
-      quaerat tempore natus quisquam! Architecto, natus ducimus dolore expedita,
-      odio doloremque officiis perspiciatis sint tempore commodi laborum illum
-    </p>
+    <div id="formLeaving" class="form-leaving container">
+      <div class="header">
+        <h3 class="title">
+          Остались вопросы? <br />Заполните форму, <br />и мы ответим вам
+          <br />в течение 24 часов!
+        </h3>
+        <button id="closeFormLeavingBtn" class="close-button"></button>
+      </div>
+      <form>
+        <p class="title">Ваш контакт</p>
+        <div class="inputs-container">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="+7 (000) 000-00-00"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Почта"
+            required
+          />
+        </div>
+        <div class="form-footer">
+          <button class="submit" type="submit"><span>•</span>Отправить</button>
+          <p>
+            Нажав на кнопку, соглашаюсь <br />на обработку
+            <a href="#">персональных данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <!-- <a href="test.html">test</a> -->
+
     <script src="./scripts/globalVariables.js"></script>
     <script src="./scripts/headerMenu.js"></script>
-    <!-- <script src="./scripts/cases.js"></script> -->
+    <script type="module" src="./scripts/typewriter.js"></script>
+    <script src="./scripts/mobileScroll.js"></script>
+    <script type="module" src="./scripts/swipers.js"></script>
+    <script src="./scripts/carousel.js"></script>
+    <script src="./scripts/cases.js"></script>
+    <script src="./scripts/services.js"></script>
+    <script src="./scripts/footer.js"></script>
     <script type="module" src="./scripts/index.js"></script>
     <script></script>
   </body>
