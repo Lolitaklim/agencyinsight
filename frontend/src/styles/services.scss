@@ -78,9 +78,7 @@ $purple: rgba(101, 60, 244, 1);
         border: 1px solid #fff;
         font-size: 3.13vw;
         line-height: 120%;
-        // letter-spacing: -0.4vw;
-        letter-spacing: -0.2%;
-        // letter-spacing: -0.2px;
+        letter-spacing: -0.15vw;
       }
     }
   }
@@ -90,7 +88,7 @@ $purple: rgba(101, 60, 244, 1);
     p {
       margin-top: 40.2vw;
     }
-    .footer {
+    .card-footer {
       margin-top: 40.2vw;
     }
   }
@@ -156,7 +154,7 @@ $purple: rgba(101, 60, 244, 1);
         font-size: 12px;
         letter-spacing: -0.24px;
       }
-      .footer {
+      .card-footer {
         margin-top: 0;
         gap: 4px;
         span {
@@ -173,7 +171,7 @@ $purple: rgba(101, 60, 244, 1);
         margin-top: 136px;
         // margin: auto 0;
       }
-      .footer {
+      .card-footer {
         margin-top: 136px;
         // margin: auto 0;
       }
@@ -212,7 +210,7 @@ $purple: rgba(101, 60, 244, 1);
         font-size: 14px;
         letter-spacing: -0.28px;
       }
-      .footer {
+      .card-footer {
         span {
           padding: 8px 12px;
           border-radius: 12px;
@@ -226,7 +224,7 @@ $purple: rgba(101, 60, 244, 1);
       p {
         margin-top: 166px;
       }
-      .footer {
+      .card-footer {
         margin-top: 166px;
       }
     }

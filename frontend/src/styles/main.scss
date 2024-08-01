@@ -257,8 +257,8 @@ button {
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 3.75vw;
+  padding-right: 3.75vw;
 }
 
 .nowrap {
@@ -319,14 +319,14 @@ button {
   background-image: url('./../img/tik_tok.svg');
 }
 
-@media (min-width: 400px) {
-  .container {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-}
+// @media (min-width: 400px) {
+//   .container {
+//     padding-left: 18px;
+//     padding-right: 18px;
+//   }
+// }
 
-@media (min-width: 500px) {
+@media (min-width: 650px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;

@@ -12,13 +12,11 @@
 
 
 пропорция vw 
-320: 267 к 83.5
+320: 267 к 83.5 - делить на 3.2
 
 ограничения вывода текстов
 
 общие стили заголовков
-
-мейн нейвс по высооте мобила вью вид
 
 тайтлы карточек 400
 
@@ -27,3 +25,18 @@
 все карточки вверху категории
 
 .form-footer p и .follow в футере сделать vw
+
+скачать бриф
+
+о нас 
+
+комментарии
+
+карусель править
+
+WA - https://api.whatsapp.com/send/?phone=79237011362
+Dzen - https://dzen.ru/id/5c905f200b236a00b3a5b48b
+TG - https://t.me/insightda
+TikTok - https://www.tiktok.com/@digital_insight
+VK - https://vk.com/agencyinsight
+Pinterest - https://www.pinterest.com/insightintodigital/
