@@ -1,0 +1,130 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.cases-container {
+  margin-top: 3.72vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.55vw;
+  .case {
+    position: relative;
+    color: $white;
+    .container_img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 65.1vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6vw;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
+      }
+    }
+    .category {
+      position: absolute;
+      top: 6.2vw;
+      left: 4.96vw;
+      font-size: 3.2vw;
+      line-height: 110%;
+      letter-spacing: 0.15vw;
+      text-transform: uppercase;
+      max-width: 70%;
+    }
+    .title {
+      position: absolute;
+      bottom: 5.2vw;
+      left: 4.96vw;
+      max-width: 84%;
+      font-size: 4.5vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.17vw;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .cases-container {
+    margin-top: 2.8vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.93vw;
+    .case {
+      flex: 1 1 calc(50% - 0.93vw);
+      .container_img {
+        max-height: 33vw;
+        border-radius: 3vw;
+      }
+      .category {
+        top: 3vw;
+        left: 3vw;
+        font-size: 1.8vw;
+        letter-spacing: 0.09vw;
+      }
+      .title {
+        bottom: 3vw;
+        left: 3vw;
+        font-size: 2.7vw;
+        letter-spacing: -0.1vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .cases-container {
+    margin-top: 20px;
+    display: grid;
+    gap: 6px;
+    grid-template-rows: 21.8vw 21.8vw; //в скрипте cases.js
+    grid-template-columns: repeat(3, calc((100% - 2 * 6px) / 3));
+    .case {
+      flex: unset;
+      .container_img {
+        max-height: 44vw;
+        border-radius: 20px;
+        img {
+          width: 155%; /*? попробовать квадратные имг*/
+        }
+      }
+      .category {
+        top: 20px;
+        left: 20px;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+      }
+      .title {
+        bottom: 20px;
+        left: 20px;
+        font-size: 18px;
+        letter-spacing: -0.72px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cases-container {
+    gap: 8px;
+    grid-template-rows: 16vw 16vw;
+    grid-template-columns: repeat(4, calc((100% - 3 * 8px) / 4));
+  }
+}

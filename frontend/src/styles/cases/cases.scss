@@ -1,0 +1,212 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.cases {
+  margin-top: 9.38vw;
+  .titles {
+    color: $black;
+    .slogan {
+      font-size: 2.5vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: 0.13vw;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+    h2 {
+      margin-top: 2.5vw;
+      font-size: 8.76vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.61vw;
+    }
+    .categories {
+      margin-top: 4.2vw;
+      margin-bottom: 3.75vw;
+      display: inline-flex;
+      gap: 1.25vw;
+      flex-wrap: wrap;
+      .category {
+        padding: 1.1vw 2.6vw;
+        border-radius: 2.5vw;
+        border: 1px solid $black;
+        color: $black;
+        font-size: 3.13vw;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0vw;
+      }
+      .active {
+        color: $white;
+        background-color: $black;
+      }
+    }
+  }
+  .main-case {
+    position: relative;
+    color: $white;
+    .container_img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-height: 65.1vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6vw;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
+      }
+    }
+    .category {
+      position: absolute;
+      top: 6.2vw;
+      left: 4.96vw;
+      font-size: 3.2vw;
+      line-height: 110%;
+      letter-spacing: 0.15vw;
+      text-transform: uppercase;
+      max-width: 70%;
+    }
+    .title {
+      position: absolute;
+      bottom: 5.2vw;
+      left: 4.96vw;
+      max-width: 84%;
+      font-size: 4.5vw;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.17vw;
+    }
+  }
+  .cases-container {
+    margin-top: 1.55vw;
+  }
+}
+
+@media (min-width: 650px) {
+  .cases {
+    margin-top: 76px;
+    .titles {
+      text-align: center;
+      .slogan {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+      h2 {
+        margin-top: 6px;
+        font-size: 60px;
+        letter-spacing: -4.2px;
+      }
+      .categories {
+        margin-top: 28px;
+        margin-bottom: 52px;
+        justify-content: center;
+        gap: 4px;
+        .category {
+          padding: 5.5px 12px;
+          border-radius: 12px;
+          font-size: 14px;
+          letter-spacing: -0.28px;
+        }
+      }
+    }
+    .main-case {
+      .container_img {
+        max-height: 36vw;
+        border-radius: 2vw;
+      }
+      .category {
+        top: 32px;
+        left: 36px;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        max-width: 70%;
+      }
+      .title {
+        bottom: 32px;
+        left: 36px;
+        max-width: 56%;
+        font-size: 32px;
+        letter-spacing: -1.92px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .cases {
+    .titles {
+      .categories {
+        width: 70%;
+      }
+    }
+    .main-case {
+      .container_img {
+        max-height: 372px;
+        border-radius: 20px;
+      }
+      .category {
+        top: 40px;
+        left: 52px;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        max-width: 70%;
+      }
+      .title {
+        bottom: 40px;
+        left: 52px;
+        max-width: 54%;
+        font-size: 40px;
+        letter-spacing: -2.4px;
+      }
+    }
+    .cases-container {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cases {
+    .titles {
+      .categories {
+        width: 84%;
+      }
+    }
+    .main-case {
+      .category {
+        left: 40px;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        max-width: 70%;
+      }
+      .title {
+        left: 40px;
+        max-width: 38%;
+        font-size: 40px;
+        letter-spacing: -2.4px;
+      }
+    }
+    .cases-container {
+      margin-top: 8px;
+    }
+  }
+}

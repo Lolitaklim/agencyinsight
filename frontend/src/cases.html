@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>кейсы</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="./styles/header.scss" />
+    <link rel="stylesheet" href="./styles/menu.scss" />
+    <link rel="stylesheet" href="./styles/formLeaving.scss" />
+    <link rel="stylesheet" href="./styles/casesContainer.scss" />
+    <link rel="stylesheet" href="./styles/footer.scss" />
+    <link rel="stylesheet" href="./styles/cases/cases.scss" />
+  </head>
+  <body>
+    <header class="container">
+      <a class="logo" href="./">
+        <img class="img-mob" src="./img/logo-mob.svg" alt="Логотип Insight" />
+        <img class="img-desk" src="./img/logo-desc.svg" alt="Логотип Insight" />
+      </a>
+      <nav>
+        <a class="header-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
+        <div class="dropdown">
+          <a
+            class="header-link drop-link"
+            href="#"
+            data-b="Услуги"
+            data-f="Услуги"
+            ><span></span
+          ></a>
+          <!-- <div class="dropdown-content">
+            <a href="#">Ссылка 1</a>
+            <a href="#">Ссылка 2</a>
+            <a href="#">Ссылка 3</a>
+          </div> -->
+        </div>
+        <a class="header-link" href="#" data-b="Команда" data-f="Команда"></a>
+        <a class="header-link" href="#" data-b="Новости" data-f="Новости"></a>
+      </nav>
+      <div class="buttons">
+        <a class="button-fill-hover btn-contact" href="#"
+          ><span class="dot">•</span><span class="text">Связаться</span></a
+        >
+        <button class="menu-btn" id="openMenu"></button>
+      </div>
+    </header>
+    <section class="menu">
+      <div id="panelLeft" class="panel left-panel">
+        <img class="logo-icon" src="./img/logo-icon.svg" alt="logo icon" />
+        <div class="bottom">
+          <div class="reviews">
+            <img src="./img/logo-company.svg" alt="logo icon" />
+            <div class="description">
+              <p class="stars">
+                <span></span><span></span><span></span><span></span
+                ><span></span>
+              </p>
+              <div class="quantity">22 отзыва</div>
+            </div>
+          </div>
+          <p class="tagline">It's all on the surface</p>
+        </div>
+      </div>
+      <div id="panelRight" class="panel right-panel">
+        <div class="header-menu">
+          <img src="./img/logo-icon.svg" alt="logo icon" />
+          <a class="button-fill-hover btn-contact openFormLeavingBtn" href="#"
+            ><span class="dot">•</span><span class="text">Связаться</span></a
+          >
+          <button class="close-btn" id="closeMenu"></button>
+        </div>
+        <div class="navigation">
+          <p class="title">Навигация</p>
+          <div class="links">
+            <a class="menu-link" href="#">Проекты<sup>01</sup></a>
+            <p class="menu-link drop-link" id="buttonDropdownMenu">
+              <span class="text">Услуги</span
+              ><span class="chevron" id="chevronMenu"></span><sup>02</sup>
+            </p>
+            <div class="dropdown-content" id="dropdownContentMenu">
+              <a href="#1">Контекстная реклама</a>
+              <a href="#2">Маркировка рекламы</a>
+              <a href="#">CID</a>
+              <a href="#">Создание сайтов</a>
+              <a href="#">Перевод текста</a>
+              <a href="#">SMM</a>
+            </div>
+            <a class="menu-link" href="#">Команда<sup>03</sup></a>
+            <a class="menu-link" href="#">Новости<sup>04</sup></a>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="info-social">
+            <div class="information" id="informationMenu">
+              <a href="#" class="messenger">WhatsApp</a>
+              <a href="#" class="messenger">Telegram</a>
+              <a href="#" class="tel">+7 (999) 462-05-62</a>
+              <a href="#" class="email">info@agencyinsight.ru</a>
+              <a href="#" class="privacy-policy">
+                Политика конфиденциальности
+              </a>
+              <a href="#" class="copyright"> © Digital agency Insight 2024</a>
+            </div>
+            <div class="social">
+              <a class="vk" href="#"></a>
+              <a class="telegram" href="#"></a>
+              <a class="whatsapp" href="#"></a>
+              <!-- <a class="pinterest" href="#"></a> -->
+              <a class="yandex_zen" href="#"></a>
+              <!-- <a class="tik_tok " href="#"></a> -->
+            </div>
+          </div>
+          <button class="open-form-btn openFormLeavingBtn">
+            <span>•</span>Стать нашим партнером
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="cases container bottom_main">
+      <div class="titles">
+        <p class="slogan">Да, да мы не пальцем деланные</p>
+        <h2>Наши работы</h2>
+        <div class="categories" id="categoriesContainer">
+          <h3 class="category active">Контекстная реклама</h3>
+        </div>
+      </div>
+      <!-- <a href="#" class="main-case">
+        <div class="container_img">
+          <img src="./../../backend/project/uploads/build.jpeg" alt="" />
+        </div>
+        <p class="category">Контекстная реклама</p>
+        <p class="title">
+          Personalization for Mobile Applications - Its Role
+          <span class="nowrap">and Tips</span> on Implementation
+        </p>
+      </a> -->
+      <div class="cases-container" id="casesContainer"></div>
+    </section>
+    <footer class="container footer">
+      <div class="mobile">
+        <a class="logo" href="#">
+          <img src="./img/logo-mob-white.svg" alt="Логотип Insight" />
+        </a>
+        <p class="title-footer">Готовы начать?</p>
+        <p class="description">
+          Свяжитесь с нами сегодня и выведите свою рекламу на новый уровень!
+        </p>
+        <button class="open-form-btn openFormLeavingBtn">
+          <span>•</span>Стать нашим партнером
+        </button>
+        <div class="info">
+          <div class="contacts">
+            <p class="title">Контакты</p>
+            <a class="mail" href="mailto:info@agencyinsight.ru"
+              >info@agencyinsight.ru</a
+            >
+            <a class="tel" href="tel:+79237011362">+7 (923) 701-13-62</a>
+            <a class="additional-tel" href="tel:+73832840858"
+              >+7 (383) 284-08-58</a
+            >
+          </div>
+          <div class="footer-menu">
+            <a href="#">Кейсы</a>
+            <a href="#">Новости</a>
+            <a href="#">Команда</a>
+            <a href="#">Услуги</a>
+          </div>
+        </div>
+        <div class="follow">
+          <p class="title">Следите за нами</p>
+          <div class="links">
+            <a class="vk" href="#"></a>
+            <a class="telegram" href="#"></a>
+            <a class="whatsapp" href="#"></a>
+            <a class="pinterest" href="#"></a>
+            <a class="yandex_zen" href="#"></a>
+            <a class="tik_tok" href="#"></a>
+          </div>
+        </div>
+        <div class="company-info">
+          ООО Диджитал агентство “Инсайт” <br />ОГРН 1165476075973630102,
+          <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
+          д.43, оф. блок 1, оф 7
+        </div>
+        <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+        <p class="copyright">© Insight digital agency. All rights reserved</p>
+      </div>
+      <div class="desktop">
+        <div class="left">
+          <p class="title-footer">Готовы начать?</p>
+          <p class="description">
+            Свяжитесь с нами сегодня и выведите свою рекламу на новый уровень!
+          </p>
+          <a class="mail" href="mailto:info@agencyinsight.ru"
+            >info@agencyinsight.ru</a
+          >
+          <a class="tel" href="tel:+79237011362">+7 (923) 701-13-62</a>
+          <a class="additional-tel" href="tel:+73832840858"
+            >+7 (383) 284-08-58</a
+          >
+          <div class="company-info">
+            ООО Диджитал агентство “Инсайт” <br />ОГРН 1165476075973630102,
+            <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
+            д.43, оф. блок 1, оф 7
+          </div>
+          <a class="privacy-policy" href="#">Политика конфиденциальности</a>
+          <p class="copyright">© Insight digital agency. All rights reserved</p>
+        </div>
+        <div class="right">
+          <form>
+            <p class="title">Ваш контакт</p>
+            <div class="inputs-container">
+              <div class="main-inputs">
+                <input
+                  class="name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  class="tel"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="+7 (000) 000-00-00"
+                  required
+                />
+              </div>
+              <input
+                class="email"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ваша почта"
+                required
+              />
+              <textarea
+                class="task"
+                name="task"
+                id="task"
+                placeholder="Опишите вашу задачу (необязательно)"
+              ></textarea>
+            </div>
+            <div class="form-footer">
+              <button class="button-fill-hover submit" type="submit">
+                <span class="dot">•</span
+                ><span class="nowrap text">Стать нашим партнером</span>
+              </button>
+              <p>
+                Нажав на кнопку, соглашаюсь <br />на обработку
+                <a href="#">персональных данных</a>
+              </p>
+            </div>
+          </form>
+          <div class="follow">
+            <p class="title">Следите за нами</p>
+            <div class="links">
+              <a class="vk" href="#"></a>
+              <a class="telegram" href="#"></a>
+              <a class="whatsapp" href="#"></a>
+              <a class="pinterest" href="#"></a>
+              <a class="yandex_zen" href="#"></a>
+              <a class="tik_tok" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="formLeaving" class="form-leaving container">
+      <div class="header">
+        <h3 class="title">
+          Остались вопросы? <br />Заполните форму, <br />и мы ответим вам
+          <br />в течение 24 часов!
+        </h3>
+        <button id="closeFormLeavingBtn" class="close-button"></button>
+      </div>
+      <form>
+        <p class="title">Ваш контакт</p>
+        <div class="inputs-container">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="+7 (000) 000-00-00"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Почта"
+            required
+          />
+        </div>
+        <div class="form-footer">
+          <button class="submit" type="submit"><span>•</span>Отправить</button>
+          <p>
+            Нажав на кнопку, соглашаюсь <br />на обработку
+            <a href="#">персональных данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="./scripts/globalVariables.js"></script>
+    <script src="./scripts/headerMenu.js"></script>
+    <script src="./scripts/cases.js"></script>
+    <script src="./scripts/footer.js"></script>
+  </body>
+</html>

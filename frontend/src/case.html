@@ -3,19 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>главная</title>
+    <title>кейс</title>
     <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="stylesheet" href="./styles/header.scss" />
     <link rel="stylesheet" href="./styles/menu.scss" />
     <link rel="stylesheet" href="./styles/formLeaving.scss" />
-    <link rel="stylesheet" href="./styles/homepage/hero.scss" />
-    <link rel="stylesheet" href="./styles/homepage/mainNews.scss" />
-    <link rel="stylesheet" href="./styles/homepage/carousel.scss" />
-    <link rel="stylesheet" href="./styles/homepage/casesHomepage.scss" />
-    <link rel="stylesheet" href="./styles/casesContainer.scss" />
-    <link rel="stylesheet" href="./styles/homepage/services.scss" />
-    <link rel="stylesheet" href="./styles/homepage/news.scss" />
     <link rel="stylesheet" href="./styles/footer.scss" />
+    <link rel="stylesheet" href="./styles/case/case.scss" />
   </head>
   <body>
     <header class="container">
@@ -24,12 +18,7 @@
         <img class="img-desk" src="./img/logo-desc.svg" alt="Логотип Insight" />
       </a>
       <nav>
-        <a
-          class="header-link"
-          href="cases.html"
-          data-b="Проекты"
-          data-f="Проекты"
-        ></a>
+        <a class="header-link" href="#" data-b="Кейсы" data-f="Кейсы"></a>
         <div class="dropdown">
           <a
             class="header-link drop-link"
@@ -82,7 +71,7 @@
         <div class="navigation">
           <p class="title">Навигация</p>
           <div class="links">
-            <a class="menu-link" href="cases.html">Проекты<sup>01</sup></a>
+            <a class="menu-link" href="#">Проекты<sup>01</sup></a>
             <p class="menu-link drop-link" id="buttonDropdownMenu">
               <span class="text">Услуги</span
               ><span class="chevron" id="chevronMenu"></span><sup>02</sup>
@@ -126,180 +115,218 @@
         </div>
       </div>
     </section>
-    <section class="hero container">
-      <div class="titles">
-        <h1>Маркетинговое агенство полного цикла</h1>
-        <h2>
-          Мы предлагаем <span class="nowrap">не услуги</span>, мы предлагаем
-          <span id="typewriter"></span>
-        </h2>
-        <h3>
-          Ваши цели — наши цели. Мы работаем
-          <span class="nowrap">в тесном</span> сотрудничестве с вами, чтобы
-          разработать <span class="nowrap">и реализовать</span> решения, которые
-          помогут вам достичь успеха.
-        </h3>
+    <section class="case container" id="caseContainer">
+      <div class="case-head">
+        <img
+          class="logo"
+          src="../../backend/project/uploads/Alleva-main-logo 2.png"
+          alt=""
+        />
+        <h1>
+          +46% к доходу: как мы вывели Alleva в лидеры рынка с помощью
+          digital-маркетинга
+        </h1>
+        <p class="category">Контекстная реклама</p>
+        <div class="container_main_img">
+          <img
+            class="main-img"
+            src="../../backend/project/uploads/lodka.jpg"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="buttons" id="mobile-buttons">
-        <a class="button-fill-hover btn-additional nowrap" href="#"
-          ><span class="dot">•</span><span class="text">Заполнить бриф</span></a
-        >
-        <a class="button-fill-hover btn-contact" href="#"
-          ><span class="dot">•</span><span class="text">Связаться</span></a
-        >
+      <div class="acquaintance">
+        <p class="title">Знакомьтесь</p>
+        <div class="line-points">
+          <span class="line"></span>
+          <div class="points">
+            <p class="point">
+              Alleva – итальянский производитель кормов для кошек и собак
+              классов holistic и супер-премиум.
+            </p>
+            <p class="point">
+              <span>Задача:</span>Увеличить узнаваемость бренда Alleva на
+              российском рынке и вывести его в лидеры ниши премиальных кормов.
+            </p>
+            <p class="point">
+              <span>Стартовые позиции:</span>Уход крупных игроков с рынка кормов
+              класса holistic создал для Alleva "окно возможностей", но
+              одновременно обострил конкуренцию. Требовалось действовать быстро
+              и эффективно.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="main-news container">
-      <div class="swiper" id="mainNewsSwiper">
-        <div class="swiper-wrapper" id="mainNewsSwiperWrapper"></div>
-        <div class="swiper-pagination"></div>
+      <div class="color-block">
+        <p class="title">Сложности:</p>
+        <div class="points">
+          <p class="point">
+            <span>Низкая узнаваемость бренда.</span> Сайт Alleva занимал 10
+            место в поисковой выдаче по ключевому запросу, теряя более Х
+            потенциальных клиентов ежемесячно.
+          </p>
+          <p class="point">
+            <span>Более 90% посетителей сайта заходили на него впервые.</span>
+            Аудитория не была знакома с брендом и его преимуществами.
+          </p>
+          <p class="point">
+            <span>Низкий процент повторных покупок (70%).</span>
+          </p>
+        </div>
       </div>
-    </section>
-    <section class="carousel" id="carousel" role="region">
-      <div class="carousel-container" id="carouselContainer" role="list">
-        <img src="./img/liftoff.svg" class="carousel-item" role="listitem" />
-        <img src="./img/customer.svg" class="carousel-item" role="listitem" />
-        <img src="./img/appsfluer.svg" class="carousel-item" role="listitem" />
-        <img src="./img/appsfluer.svg" class="carousel-item" role="listitem" />
-        <img src="./img/appsfluer.svg" class="carousel-item" role="listitem" />
-        <img src="./img/appsfluer.svg" class="carousel-item" role="listitem" />
+      <div class="ordinary-block">
+        <p class="title">Наш подход:</p>
+        <div class="points">
+          <p class="point">
+            В Insight Digital Agency мы верим в силу комплексного
+            digital-маркетинга и тесного сотрудничества с клиентом. Работая с
+            Alleva, мы проанализировали их целевую аудиторию, конкурентов и
+            выявили точки роста, чтобы разработать эффективную стратегию
+            продвижения
+          </p>
+        </div>
       </div>
-    </section>
-    <section class="cases cases-homepage container">
-      <h2>Кейсы</h2>
-      <div class="cases-container" id="casesContainer"></div>
-      <div class="mobile-btn">
-        <a class="button-fill-hover btn-additional" href="cases.html"
-          ><span class="dot">•</span><span class="text">Смотреть все</span></a
-        >
-      </div>
-    </section>
-    <section class="services container">
-      <h2>Услуги</h2>
-      <div class="cards">
-        <div class="left">
-          <div class="card">
-            <div class="head">
-              <h3>Продвижение</h3>
-              <button class="btnServices btn-services"></button>
-              <span class="promotion"></span>
-            </div>
-            <div class="content">
-              <p>
-                Настроим рекламу под любые ваши задачи: продажи, охваты,
-                узнаваемость, упоминания. Простраиваем логику: реклама +
-                экономика бизнса + продажи, применяем цепочки и воронки,
-                котороые сработают конкретно у вас
+      <div class="mark-num-list">
+        <p class="title">Что мы сделали:</p>
+        <div class="points">
+          <div class="point">
+            <div class="num">01</div>
+            <div class="list">
+              <p class="title-point">
+                Глубокий анализ. Мы изучили целевую аудиторию Alleva, ее
+                потребности и "боли", чтобы говорить с ней на одном языке:
               </p>
-              <div class="card-footer">
-                <span>Контекстная реклама</span>
-                <span>SMM</span>
-                <span>Таргетированная реклама</span>
-              </div>
+              <ul>
+                <li>
+                  Портрет ЦА: Молодые семьи, заводящие питомцев, и опытные
+                  владельцы, готовые платить больше за качество корма.
+                </li>
+                <li>
+                  Страхи и возражения: Некачественные корма, проблемы со
+                  здоровьем питомца, завышенные цены, сложность выбора.
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="card">
-            <div class="head">
-              <h3>Разработка сайтов</h3>
-              <button class="btnServices btn-services"></button>
-              <span></span>
-            </div>
-            <div class="content">
-              <p>Тут все понятно</p>
-              <div class="card-footer">
-                <span>Структура</span>
-                <span>Прототип</span>
-                <span>Дизайн-концепции</span>
-                <span>Верстка</span>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="head">
-              <h3>Контент маркетинг</h3>
-              <button class="btnServices btn-services"></button>
-              <span></span>
-            </div>
-            <div class="content">
-              <p>Часто бывают мелкие задачки текстовые</p>
-              <div class="card-footer">
-                <span>Статьи</span>
-                <span>Гайды</span>
-                <span>Рассылки</span>
-                <span>Новости</span>
-              </div>
+          <div class="point">
+            <div class="num">02</div>
+            <div class="list">
+              <p class="title-point">Стратегия охвата</p>
+              <ul>
+                <li>
+                  Медийная реклама: Яркая и запоминающаяся реклама с акцентом на
+                  итальянском качестве, натуральных ингредиентах и заботе о
+                  здоровье питомца.
+                </li>
+                <li>
+                  Контент-маркетинг: Создание промо-страниц с полезным контентом
+                  – статьями о питании, советами по выбору корма и отзывами
+                  ветеринаров.
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="card">
-            <div class="head">
-              <h3>Профессиональный перевод</h3>
-              <button class="btnServices btn-services"></button>
-              <span></span>
-            </div>
-            <div class="content">
-              <p>Можем переводить</p>
-              <div class="card-footer">
-                <span>Английский язык</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="right">
-          <div class="card">
-            <div class="head">
-              <h3>Дизайн</h3>
-              <button class="btnServices btn-services"></button>
-              <span></span>
-            </div>
-            <div class="content">
-              <p>Тут про дизайн</p>
-              <div class="card-footer">
-                <span>Логотипы</span>
-                <span>Фирменный стиль</span>
-                <span>Дизайн рекламных материалов</span>
-              </div>
+          <div class="point">
+            <div class="num">03</div>
+            <div class="list">
+              <p class="title-point">Стратегия удержания:</p>
+              <ul>
+                <li>
+                  Ретаргетинг: Настроили точный ретаргетинг, чтобы вернуть на
+                  сайт пользователей, уже проявивших интерес к Alleva.
+                </li>
+                <li>
+                  Персонализация: Использовали персонализированные объявления,
+                  учитывая предыдущие действия и интересы пользователей.
+                </li>
+                <li>
+                  Лояльность: Разработали систему акций и скидок для
+                  стимулирования повторных покупок.
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="card">
-            <div class="head">
-              <h3>Бизнес аудит</h3>
-              <button class="btn-services"></button>
-              <span></span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="head">
-              <h3>Маркировка рекламы</h3>
-              <button class="btn-services"></button>
-              <span></span>
-            </div>
-          </div>
-          <div class="card last-card">
-            <div class="head">
-              <h3>Комплексное ведение</h3>
-              <span></span>
-            </div>
-            <p>Берем ваш маркетинговый отдел в свои руки</p>
-            <div class="card-footer">
-              <span>Аналитика</span>
-              <span>Маркетинговая стратегия</span>
-              <span>Подбор рекламных инструментов</span>
-              <span>Сайт</span>
-              <span>Дизайн</span>
-              <span>Маркировка</span>
-              <span>и т.д.</span>
+          <div class="point">
+            <div class="num">04</div>
+            <div class="list">
+              <p class="title-point">Стратегия конверсии:</p>
+              <ul>
+                <li>
+                  Контекстная реклама: Привлекли на сайт "горячих" клиентов, уже
+                  ищущих корма Alleva или их аналоги.
+                </li>
+                <li>
+                  Оптимизация сайта: Сделали сайт удобнее, информативнее и
+                  привлекательнее для повышения конверсии.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
+      <div class="results">
+        <p class="title">Результаты</p>
+        <div class="points">
+          <div class="point">
+            <p class="top">На 66%</p>
+            <p class="bottom">увеличилась посещаемость сайта</p>
+          </div>
+          <div class="point">
+            <p class="top">В 2 раза с 5,9% до 13,5%</p>
+            <p class="bottom">вырос процент повторных визитов</p>
+          </div>
+          <div class="point">
+            <p class="top">3159%</p>
+            <p class="bottom">достиг ROI рекламной кампании</p>
+          </div>
+          <div class="point">
+            <p class="top">На 76%</p>
+            <p class="bottom">выросло количество заказов</p>
+          </div>
+          <div class="point">
+            <p class="top">На 46%</p>
+            <p class="bottom">увеличился доход Alleva</p>
+          </div>
+        </div>
+      </div>
+      <div class="simple-paragraph">
+        Этот проект в очередной раз доказал, что продуманная digital-стратегия и
+        слаженная работа команды способны привести к впечатляющим результатам.
+        Хотите таких же результатов для своего бизнеса? Обращайтесь в Insight
+        Digital Agency!
       </div>
     </section>
-    <section class="news container bottom_main">
-      <h2>Новости</h2>
-      <div class="swiper" id="newsSwiper">
-        <div class="swiper-wrapper" id="newsSwiperWrapper"></div>
-        <div class="swiper-pagination"></div>
+    <section class="also container bottom_main">
+      <p class="title">Читайте также</p>
+      <div class="also-cases-container">
+        <a href="#" class="also-case">
+          <div class="container_img">
+            <img src="../../backend/project/uploads/lodka.jpg"" alt="" />
+          </div>
+          <p class="category">Маркировка</p>
+          <p class="also-case-title">
+            Сдача отчетности <span class="nowrap">по рекламе</span> в интернете
+          </p>
+        </a>
+        <a href="#" class="also-case">
+          <div class="container_img">
+            <img src="../../backend/project/uploads/lodka.jpg"" alt="" />
+          </div>
+          <p class="category">Маркировка</p>
+          <p class="also-case-title">
+            Сдача отчетности <span class="nowrap">по рекламе</span> в интернете
+          </p>
+        </a>
+        <a href="#" class="also-case">
+          <div class="container_img">
+            <img src="../../backend/project/uploads/lodka.jpg"" alt="" />
+          </div>
+          <p class="category">Маркировка</p>
+          <p class="also-case-title">
+            Сдача отчетности <span class="nowrap">по рекламе</span> в интернете
+          </p>
+        </a>
       </div>
-      <div class="news-cards" id="newsCards"></div>
     </section>
     <footer class="container footer">
       <div class="mobile">
@@ -325,7 +352,7 @@
             >
           </div>
           <div class="footer-menu">
-            <a href="cases.html">Кейсы</a>
+            <a href="#">Кейсы</a>
             <a href="#">Новости</a>
             <a href="#">Команда</a>
             <a href="#">Услуги</a>
@@ -475,17 +502,9 @@
         </div>
       </form>
     </div>
-    <a href="case.html" style="display: none"></a>
     <script src="./scripts/globalVariables.js"></script>
     <script src="./scripts/headerMenu.js"></script>
-    <script type="module" src="./scripts/typewriter.js"></script>
-    <script src="./scripts/mobileScroll.js"></script>
-    <script type="module" src="./scripts/swipers.js"></script>
-    <script src="./scripts/carousel.js"></script>
-    <script src="./scripts/homepageCases.js"></script>
-    <script src="./scripts/services.js"></script>
+    <script src="./scripts/case.js"></script>
     <script src="./scripts/footer.js"></script>
-    <script type="module" src="./scripts/index.js"></script>
-    <script></script>
   </body>
 </html>

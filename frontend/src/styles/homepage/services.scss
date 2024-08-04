@@ -45,7 +45,7 @@ $purple: rgba(101, 60, 244, 1);
       .btn-services {
         width: 9.38vw;
         height: 9.38vw;
-        background-image: url('../img/btn-plus-close.svg');
+        background-image: url('../../img/btn-plus-close.svg');
         background-size: cover;
         transition: transform 0.6s ease;
       }
@@ -135,10 +135,10 @@ $purple: rgba(101, 60, 244, 1);
           width: 18px;
           height: 18px;
           background-size: cover;
-          background-image: url('../img/cross-icon.svg');
+          background-image: url('../../img/cross-icon.svg');
         }
         .promotion {
-          background-image: url('../img/settings.svg');
+          background-image: url('../../img/settings.svg');
         }
       }
       .content {

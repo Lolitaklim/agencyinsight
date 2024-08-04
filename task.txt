@@ -40,3 +40,14 @@ TG - https://t.me/insightda
 TikTok - https://www.tiktok.com/@digital_insight
 VK - https://vk.com/agencyinsight
 Pinterest - https://www.pinterest.com/insightintodigital/
+
+
+titles descriptions ключ слова фавиконы на каждую страницу
+
+куки
+
+у футера убрат отступ справа
+
+главный кейс или новость в кейсах
+
+экранирование

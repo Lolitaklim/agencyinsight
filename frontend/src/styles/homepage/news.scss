@@ -1,5 +1,5 @@
-@import 'swiper/swiper.scss';
-@import 'swiper/modules/pagination.scss';
+// @import 'swiper/swiper.scss';
+// @import 'swiper/modules/pagination.scss';
 
 $black: rgba(14, 13, 23, 1);
 $white: rgba(255, 255, 255, 1);
@@ -7,13 +7,6 @@ $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
 
 .news {
-  // стили скругления блока над футером
-  background-color: $white;
-  border-bottom-left-radius: 12.51vw;
-  border-bottom-right-radius: 12.51vw;
-  padding-bottom: 12.51vw;
-  position: relative;
-
   margin-top: 12vw;
   color: $black;
   h2 {
@@ -91,10 +84,6 @@ $purple: rgba(101, 60, 244, 1);
 
 @media (min-width: 650px) {
   .news {
-    border-bottom-left-radius: 21px;
-    border-bottom-right-radius: 21px;
-    padding-bottom: 30px;
-
     margin-top: 60px;
     h2 {
       font-size: 40px;
@@ -167,10 +156,6 @@ $purple: rgba(101, 60, 244, 1);
 
 @media (min-width: 900px) {
   .news {
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
-    padding-bottom: 50px;
-
     .news-cards {
       gap: 6px;
       a {
@@ -197,10 +182,6 @@ $purple: rgba(101, 60, 244, 1);
 
 @media (min-width: 1200px) {
   .news {
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    padding-bottom: 70px;
-
     .news-cards {
       gap: 8px;
       a {

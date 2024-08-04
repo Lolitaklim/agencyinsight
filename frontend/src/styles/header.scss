@@ -2,8 +2,6 @@ $black: rgba(14, 13, 23, 1);
 $white: rgba(255, 255, 255, 1);
 $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
-// $indigo: rgba(96, 61, 219, 1);
-// $amethyst: rgba(136, 117, 198, 1);
 
 header {
   padding: 24px 0px;
@@ -75,7 +73,12 @@ header {
           color: $purple;
         }
         &:after {
-          background: rgba(136, 117, 198, 0.5); //?
+          background: $purple;
+        }
+        &:hover {
+          .dot {
+            color: $black;
+          }
         }
       }
       .menu-btn {

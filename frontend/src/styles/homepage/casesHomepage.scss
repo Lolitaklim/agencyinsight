@@ -1,0 +1,62 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$purple: rgba(101, 60, 244, 1);
+.cases {
+  margin-top: 5.7vw;
+  h2 {
+    color: $black;
+    font-size: 6.5vw;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.37vw;
+  }
+  .mobile-btn {
+    margin-top: 6.6vw;
+    display: flex;
+    justify-content: center;
+    a {
+      background-color: $black;
+      color: $white;
+      padding: 3vw 6vw;
+      gap: 3vw;
+      border-radius: 3.6vw;
+      font-size: 4.2vw;
+      line-height: 100%;
+      letter-spacing: 0vw;
+      .dot {
+        color: $purple;
+      }
+      &:after {
+        background: $purple;
+      }
+      &:hover {
+        .dot {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .cases {
+    margin-top: 5.2vw;
+    h2 {
+      font-size: 5.3vw;
+      letter-spacing: -0.37vw;
+    }
+    .mobile-btn {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .cases {
+    margin-top: 40px;
+    h2 {
+      font-size: 40px;
+      letter-spacing: -2.4px;
+    }
+  }
+}

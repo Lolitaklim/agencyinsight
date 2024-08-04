@@ -40,7 +40,7 @@ $purple: rgba(101, 60, 244, 1);
   }
   .buttons {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -55,6 +55,13 @@ $purple: rgba(101, 60, 244, 1);
       font-size: 4.2vw;
       line-height: 100%;
       letter-spacing: 0vw;
+      .text,
+      .dot {
+        z-index: 4; //На 1 больше текущего слоя
+      }
+      &:after {
+        z-index: 3; //На текущем слое
+      }
     }
     .btn-additional {
       background-color: $black;
@@ -63,7 +70,12 @@ $purple: rgba(101, 60, 244, 1);
         color: $purple;
       }
       &:after {
-        background: rgba(136, 117, 198, 0.5); //?
+        background: $purple;
+      }
+      &:hover {
+        .dot {
+          color: $black;
+        }
       }
     }
     .btn-contact {
@@ -73,7 +85,12 @@ $purple: rgba(101, 60, 244, 1);
         color: $white;
       }
       &:after {
-        background: rgba(136, 117, 198, 0.5); //?
+        background: $black;
+      }
+      &:hover {
+        .dot {
+          color: $purple;
+        }
       }
     }
   }

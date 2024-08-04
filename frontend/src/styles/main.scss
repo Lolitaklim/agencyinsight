@@ -277,13 +277,15 @@ button {
   position: relative;
   transition: background-color 0.6s ease;
   overflow: hidden;
-  .text {
+  .text,
+  .dot {
     position: relative;
-    z-index: 5;
+    z-index: 2; //На 1 больше текущего слоя
   }
   &:after {
     content: '';
     position: absolute;
+    z-index: 1; //На текущем слое
     width: 0;
     height: 0;
     top: var(--mouse-y);
@@ -294,8 +296,8 @@ button {
   }
   &:hover {
     &:after {
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
     }
   }
 }

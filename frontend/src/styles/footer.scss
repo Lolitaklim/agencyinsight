@@ -3,6 +3,14 @@ $white: rgba(255, 255, 255, 1);
 $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
 
+// стили скругления блока над футером
+.bottom_main {
+  background-color: $white;
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  padding-bottom: 3.75vw;
+  position: relative;
+}
 .footer {
   margin-top: -12vw;
   background-color: $black;
@@ -146,6 +154,11 @@ $purple: rgba(101, 60, 244, 1);
 }
 
 @media (min-width: 650px) {
+  .bottom_main {
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    padding-bottom: 30px;
+  }
   .footer {
     margin-top: -30px;
     padding-top: 93px;
@@ -244,6 +257,7 @@ $purple: rgba(101, 60, 244, 1);
             line-height: 110%;
             letter-spacing: -0.56px;
             background-color: $black;
+            color: $white;
             &::placeholder {
               opacity: 0.5;
             }
@@ -283,6 +297,20 @@ $purple: rgba(101, 60, 244, 1);
               font-size: 12px;
               line-height: 100%;
               letter-spacing: -0.24px;
+              .dot {
+                color: $black;
+              }
+              &:after {
+                background: $purple;
+              }
+              &:hover {
+                .dot {
+                  color: $white;
+                }
+                .text {
+                  color: $white;
+                }
+              }
             }
             p {
               font-size: 10px;
@@ -324,6 +352,11 @@ $purple: rgba(101, 60, 244, 1);
 }
 
 @media (min-width: 900px) {
+  .bottom_main {
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding-bottom: 50px;
+  }
   .footer {
     margin-top: -40px;
     padding-top: 130px;
@@ -429,6 +462,11 @@ $purple: rgba(101, 60, 244, 1);
 }
 
 @media (min-width: 1200px) {
+  .bottom_main {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 70px;
+  }
   .footer {
     margin-top: -40px;
     padding-top: 164px;
