@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 $allowed_origins = [
     "http://localhost:1234",
-    "http://127.0.0.1:5500"
+    "http://127.0.0.1:5500",
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowed_origins)) {

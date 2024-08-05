@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Цвета */
+:root {
+  --black: rgba(14, 13, 23, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gray: rgba(217, 217, 217, 1);
+  --purple: rgba(101, 60, 244, 1);
+}
+
+/* Сброс стилей и базовые стили */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  user-select: none;
+  cursor: pointer;
+}
+
+button {
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 3.75vw;
+  padding-right: 3.75vw;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.button-fill-hover {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.28px;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+}
+
+.button-fill-hover .text,
+.button-fill-hover .dot {
+  position: relative;
+  z-index: 2; /* На 1 больше текущего слоя */
+}
+
+.button-fill-hover::after {
+  content: '';
+  position: absolute;
+  z-index: 1; /* На текущем слое */
+  width: 0;
+  height: 0;
+  top: var(--mouse-y);
+  left: var(--mouse-x);
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.button-fill-hover:hover::after {
+  width: 400px;
+  height: 400px;
+}
+
+@media (min-width: 650px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+
+.container {
+  min-width: 1300px;
+}
+
+header {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 45vw;
+  height: auto;
+}
+
+header .logo .img-desk {
+  display: none;
+}
+
+header nav {
+  display: none;
+}
+
+header .buttons .btn-contact {
+  display: none;
+}
+
+header .buttons .menu-btn {
+  width: 10vw;
+  height: 10vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 400px) {
+  header {
+    padding: 34px 0;
+  }
+}
+
+@media (min-width: 550px) {
+  header {
+    padding: 20px 0;
+  }
+  header .logo img {
+    width: 176px;
+    height: 36px;
+  }
+  header .logo .img-mob {
+    display: none;
+  }
+  header .logo .img-desk {
+    display: block;
+  }
+  header .buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  header .buttons .btn-contact {
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 24px 12px 22px;
+    gap: 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+  }
+  header .buttons .btn-contact .dot {
+    color: var(--purple);
+  }
+  header .buttons .btn-contact:hover .dot {
+    color: var(--black);
+  }
+  header .buttons .btn-contact::after {
+    background: var(--purple);
+  }
+  header .buttons .menu-btn {
+    background-image: none;
+    position: relative;
+    display: flex;
+    width: 93px;
+    height: 40px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    border: 2px solid #e7e7e7;
+  }
+  header .buttons .menu-btn::before {
+    content: 'Меню';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+  }
+}
+
+@media (min-width: 900px) {
+  header nav {
+    display: flex;
+    gap: 36px;
+  }
+  header nav .header-link {
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.32px;
+    position: relative;
+    overflow: hidden;
+  }
+  header nav .header-link:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  header nav .header-link:hover::before {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+  header nav .header-link::after {
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    content: attr(data-b);
+    transform: translateY(-110%);
+  }
+  header nav .header-link::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    content: attr(data-f);
+    transform: translateY(0);
+  }
+  header nav .dropdown {
+    position: relative;
+  }
+  header nav .dropdown .drop-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  header nav .dropdown .drop-link span {
+    background-image: url('../img/chevron-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+  }
+  header nav .dropdown:hover span {
+    transform: rotate(180deg);
+  }
+}
+
+/* Стили скругления блока над футером */
+.bottom_main {
+  background-color: var(--white);
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  padding-bottom: 3.75vw;
+  position: relative;
+}
+
+.footer {
+  margin-top: -12vw;
+  background-color: var(--black);
+  color: var(--white);
+  padding-top: 21.89vw;
+  padding-bottom: 6.58vw;
+}
+
+.footer a {
+  color: var(--white);
+}
+
+@media (min-width: 650px) {
+  .bottom_main {
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-top: -30px;
+    padding-top: 93px;
+    padding-right: 39px;
+  }
+
+  .footer .desktop {
+    display: flex;
+    gap: 36px;
+  }
+
+  .footer .desktop .left a {
+    display: block;
+  }
+
+  .footer .desktop .left .title-footer {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.92px;
+  }
+}

@@ -12,7 +12,9 @@ const caseTemplate = (
   gridArea,
   category_id
 ) => `
-    <a href="${href}" class="case" style="grid-area: ${gridArea}">
+    <a href="case.html?case=${encodeURIComponent(
+      href
+    )}" class="case" style="grid-area: ${gridArea}">
         <div class="container_img">
             <img src="${SERVER_URL}/uploads/${imageUrl}" alt="${altImage}" />
         </div>
@@ -97,7 +99,7 @@ function displayCases(cases) {
       state.layout.push(...Array(count).fill(itemName))
 
       return caseTemplate(
-        `#${item.href}`,
+        `${item.href}`,
         item.image_url,
         item.alt_image,
         item.title,

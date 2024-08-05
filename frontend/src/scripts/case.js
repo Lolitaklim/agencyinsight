@@ -1,149 +1,224 @@
-data = {
-  case: [
-    {
-      title:
-        '+46% к доходу: как мы вывели Alleva в лидеры рынка с помощью digital-маркетинга',
-      alt_image: 'apple painting',
-      image_url: 'lodka.jpg',
-      category: 'Контекстная реклама',
-      logo: 'Alleva-main-logo 2.png',
-      alt_logo: 'apple',
-    },
-  ],
-  case_blocks: [
-    {
-      class: 'acquaintance',
-      title: 'Знакомьтесь',
-      points: [
-        {
-          text: 'Alleva – итальянский производитель кормов для кошек и собак классов holistic и супер-премиум.',
-        },
-        {
-          bold: 'Задача:',
-          text: 'Увеличить узнаваемость бренда Alleva на российском рынке и вывести его в лидеры ниши премиальных кормов.',
-        },
-        {
-          bold: 'Стартовые позиции:',
-          text: 'Уход крупных игроков с рынка кормов класса holistic создал для Alleva "окно возможностей", но одновременно обострил конкуренцию. Требовалось действовать быстро и эффективно.',
-        },
-      ],
-    },
-    {
-      class: 'color-block',
-      title: 'Сложности:',
-      points: [
-        {
-          bold: 'Низкая узнаваемость бренда.',
-          text: 'Сайт Alleva занимал 10 место в поисковой выдаче по ключевому запросу, теряя более Х потенциальных клиентов ежемесячно.',
-        },
-        {
-          bold: 'Более 90% посетителей сайта заходили на него впервые.',
-          text: 'Аудитория не была знакома с брендом и его преимуществами.',
-        },
-        {
-          bold: 'Низкий процент повторных покупок (70%).',
-        },
-      ],
-    },
-    {
-      class: 'ordinary-block',
-      title: 'Наш подход:',
-      points: [
-        'В Insight Digital Agency мы верим в силу комплексного digital-маркетинга и тесного сотрудничества с клиентом. Работая с Alleva, мы проанализировали их целевую аудиторию, конкурентов и выявили точки роста, чтобы разработать эффективную стратегию продвижения',
-      ],
-    },
-    {
-      class: 'mark-num-list',
-      title: 'Что мы сделали:',
-      points: [
-        {
-          title_point:
-            'Глубокий анализ. Мы изучили целевую аудиторию Alleva, ее потребности и "боли", чтобы говорить с ней на одном языке:',
-          ul: [
-            'Портрет ЦА: Молодые семьи, заводящие питомцев, и опытные владельцы, готовые платить больше за качество корма.',
-            'Страхи и возражения: Некачественные корма, проблемы со здоровьем питомца, завышенные цены, сложность выбора.',
-          ],
-        },
-        {
-          title_point: 'Стратегия охвата',
-          ul: [
-            'Медийная реклама: Яркая и запоминающаяся реклама с акцентом на итальянском качестве, натуральных ингредиентах и заботе о здоровье питомца.',
-            'Контент-маркетинг: Создание промо-страниц с полезным контентом – статьями о питании, советами по выбору корма и отзывами ветеринаров.',
-          ],
-        },
-        {
-          title_point: 'Стратегия удержания:',
-          ul: [
-            'Ретаргетинг: Настроили точный ретаргетинг, чтобы вернуть на сайт пользователей, уже проявивших интерес к Alleva.',
-            'Персонализация: Использовали персонализированные объявления, учитывая предыдущие действия и интересы пользователей.',
-            'Лояльность: Разработали систему акций и скидок для стимулирования повторных покупок.',
-          ],
-        },
-        {
-          title_point: 'Стратегия конверсии:',
-          ul: [
-            'Контекстная реклама: Привлекли на сайт "горячих" клиентов, уже ищущих корма Alleva или их аналоги.',
-            'Оптимизация сайта: Сделали сайт удобнее, информативнее и привлекательнее для повышения конверсии.',
-          ],
-        },
-      ],
-    },
-    {
-      class: 'results',
-      title: 'Результаты',
-      points: [
-        {
-          top: 'На 66%',
-          bottom: 'увеличилась посещаемость сайта',
-        },
-        {
-          top: 'В 2 раза с 5,9% до 13,5%',
-          bottom: 'вырос процент повторных визитов',
-        },
-        {
-          top: '3159%',
-          bottom: 'достиг ROI рекламной кампании',
-        },
-        {
-          top: 'На 76%',
-          bottom: 'выросло количество заказов',
-        },
-        {
-          top: 'На 46%',
-          bottom: 'увеличился доход Alleva',
-        },
-      ],
-    },
-    {
-      class: 'simple-paragraph',
-      content:
-        'Этот проект в очередной раз доказал, что продуманная digital-стратегия и слаженная работа команды способны привести к впечатляющим результатам. Хотите таких же результатов для своего бизнеса? Обращайтесь в Insight Digital Agency!',
-    },
-  ],
-  also_cases: [
-    {
-      href: 'case4',
-      title:
-        'Эта концепция офиса представляет собой симбиоз современных технологий и дизайна, создавая комфортное рабочее пространство.',
-      alt_image: 'modern office',
-      image_url: 'dog-case.jpeg',
-      category: 'Разработка сайтов',
-    },
-    {
-      href: 'case4',
-      title:
-        'Эта концепция офиса представляет собой симбиоз современных технологий и дизайна, создавая комфортное рабочее пространство.',
-      alt_image: 'modern office',
-      image_url: 'dog-case.jpeg',
-      category: 'Разработка сайтов',
-    },
-    {
-      href: 'case4',
-      title:
-        'Эта концепция офиса представляет собой симбиоз современных технологий и дизайна, создавая комфортное рабочее пространство.',
-      alt_image: 'modern office',
-      image_url: 'dog-case.jpeg',
-      category: 'Разработка сайтов',
-    },
-  ],
+const caseHeadTmp = (imageUrl, altImage, title, category, logo, altLogo) => `
+    <div class="case-head">
+        <img class="logo" src="${SERVER_URL}/uploads/${logo}" alt="${altLogo}" />
+        <h1>${title}</h1>
+        <p class="category">${category}</p>
+        <div class="container_main_img">
+            <img class="main-img" src="${SERVER_URL}/uploads/${imageUrl}" alt="${altImage}" />
+        </div>
+    </div>
+`
+
+const alsoCaseTmp = (href, imageUrl, altImage, title, category) => `
+    <a href="${href}" class="also-case">
+        <div class="container_img">
+            <img src="${SERVER_URL}/uploads/${imageUrl}" alt="${altImage}" />
+        </div>
+        <p class="category">${category}</p>
+        <p class="also-case-title">${title}</p>
+    </a>
+`
+
+function renderAcquaintance(block) {
+  const points = block.points
+    .map((point) => {
+      return `
+        <p class="point">
+            ${point.text}
+        </p>`
+    })
+    .join('')
+  const html = `
+    <div class="acquaintance">
+        <p class="title">${block.title}</p>
+        <div class="line-points">
+        <span class="line"></span>
+        <div class="points">
+            ${points}
+        </div>
+        </div>
+    </div>
+  `
+  return html
 }
+
+function renderColorBlock(block) {
+  const points = block.points
+    .map((point) => {
+      return `
+        <p class="point">
+            ${point.text}
+        </p>`
+    })
+    .join('')
+  const html = `
+    <div class="color-block">
+        <p class="title">${block.title}</p>
+        <div class="points">
+            ${points}
+        </div>
+    </div>
+  `
+  return html
+}
+
+function renderOrdinaryBlock(block) {
+  const points = block.points
+    .map((point) => `<p class="point">${point.text}</p>`)
+    .join('')
+  const html = `
+    <div class="ordinary-block">
+        <p class="title">${block.title}</p>
+        <div class="points">
+            ${points}
+        </div>
+    </div>
+  `
+  return html
+}
+
+function renderMarkNumList(block) {
+  const points = block.points
+    .map((point, index) => {
+      const ul = point.ul
+        ? point.ul.map((item) => `<li>${item}</li>`).join('')
+        : ''
+      return `
+        <div class="point">
+          <div class="num">${String(index + 1).padStart(2, '0')}</div>
+          <div class="list">
+            <p class="title-point">${point.title_point}</p>
+            ${ul ? `<ul>${ul}</ul>` : ''}
+          </div>
+        </div>
+      `
+    })
+    .join('')
+  const html = `
+      <div class="mark-num-list">
+        <p class="title">${block.title}</p>
+        <div class="points">
+          ${points}
+        </div>
+      </div>
+    `
+  return html
+}
+
+function renderResults(block) {
+  const points = block.points
+    .map((point) => {
+      return `
+        <div class="point">
+            <p class="top">${point.top}</p>
+            <p class="bottom">${point.bottom}</p>
+        </div>
+      `
+    })
+    .join('')
+  const html = `
+      <div class="results">
+          <p class="title">${block.title}</p>
+          <div class="points">
+              ${points}
+          </div>
+      </div>
+    `
+  return html
+}
+
+function renderSimpleParagraph(block) {
+  const html = `
+      <div class="simple-paragraph">
+        ${block.content}
+      </div>
+    `
+  return html
+}
+
+function renderContent(data) {
+  const caseData = data.case[0]
+
+  document.title = caseData.title_page
+
+  document
+    .querySelector('meta[name="description"]')
+    .setAttribute('content', caseData.description)
+
+  document
+    .querySelector('meta[name="keywords"]')
+    .setAttribute('content', caseData.keywords)
+
+  // console.log(logo)
+  const caseHead = caseHeadTmp(
+    caseData.image_url,
+    caseData.alt_image,
+    caseData.title,
+    caseData.category,
+    caseData.logo_url,
+    caseData.alt_logo
+  )
+  let htmlContent = caseHead
+  console.log(data)
+
+  const pageData = JSON.parse(data.case[0].page_data)
+
+  pageData.case_blocks.forEach((block) => {
+    let blockHtml = ''
+    switch (block.class) {
+      case 'acquaintance':
+        blockHtml = renderAcquaintance(block)
+        break
+      case 'color-block':
+        blockHtml = renderColorBlock(block)
+        break
+      case 'ordinary-block':
+        blockHtml = renderOrdinaryBlock(block)
+        break
+      case 'mark-num-list':
+        blockHtml = renderMarkNumList(block)
+        break
+      case 'results':
+        blockHtml = renderResults(block)
+        break
+      case 'simple-paragraph':
+        blockHtml = renderSimpleParagraph(block)
+        break
+      default:
+        console.log('Неизвестный класс:', block.class)
+    }
+    htmlContent += blockHtml
+  })
+  document.getElementById('caseContainer').innerHTML = htmlContent
+
+  // const alsoCases = data.also_cases
+  //   .map((item) =>
+  //     alsoCaseTmp(
+  //       `#${item.href}`,
+  //       item.image_url,
+  //       item.alt_image,
+  //       item.title,
+  //       item.category
+  //     )
+  //   )
+  //   .join('')
+  // document.getElementById('alsoCasesContainer').innerHTML = alsoCases
+}
+
+async function loadCase() {
+  try {
+    const urlParams = new URLSearchParams(window.location.search)
+    const caseId = urlParams.get('case')
+
+    const response = await fetch(
+      `${SERVER_URL}/api/get_case.php?case=${encodeURIComponent(caseId)}`
+    )
+
+    const data = await response.json()
+
+    renderContent(data)
+  } catch (error) {
+    console.error('Error fetching the case:', error)
+  }
+}
+loadCase()
