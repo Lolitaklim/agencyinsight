@@ -88,4 +88,4 @@ $stmt->close();
 $conn->close();
 
 // Отправка данных в формате JSON
-echo json_encode($response);
+echo json_encode($response['db_status']);

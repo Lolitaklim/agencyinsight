@@ -149,7 +149,6 @@ function renderContent(data) {
     .querySelector('meta[name="keywords"]')
     .setAttribute('content', caseData.keywords)
 
-  // console.log(logo)
   const caseHead = caseHeadTmp(
     caseData.image_url,
     caseData.alt_image,

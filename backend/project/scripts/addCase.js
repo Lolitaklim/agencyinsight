@@ -258,29 +258,18 @@ function submitAllForms() {
       return response.text()
     })
     .then((text) => {
-      alert('Server response: ' + text) // Используйте alert для вывода ответа сервера
+      console.log('Server response: ' + text)
       try {
         const data = JSON.parse(text)
-        alert('Parsed JSON: ' + JSON.stringify(data)) // Преобразуйте объект в строку для отображения
+        alert('Ответ от сервера: ' + JSON.stringify(data))
+        window.location.href = './../index.php'
       } catch (e) {
-        alert('Error parsing JSON: ' + e) // Покажите ошибку разбора JSON
+        alert('Error parsing JSON: ' + e)
       }
     })
     .catch((error) => {
-      alert('Error: ' + error) // Покажите ошибку
+      alert('Error: ' + error)
     })
-  // .then((text) => {
-  //   alert('Server response:', text)
-  //   try {
-  //     const data = JSON.parse(text)
-  //     alert('Parsed JSON:', data)
-  //   } catch (e) {
-  //     alert('Error parsing JSON:', e)
-  //   }
-  // })
-  // .catch((error) => {
-  //   alert('Error:', error)
-  // })
 }
 
 function collectData() {

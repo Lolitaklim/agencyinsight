@@ -166,8 +166,22 @@ $amethyst: rgba(136, 117, 198, 1);
         font-size: 4.38vw;
         line-height: 100%;
         letter-spacing: -0.09vw;
-        span {
+        .dot {
           color: $purple;
+        }
+
+        .text,
+        .dot {
+          z-index: 6; //На 1 больше текущего слоя
+        }
+        &:after {
+          z-index: 5; //На текущем слое
+          background: $black;
+        }
+        &:hover {
+          .text {
+            color: $white;
+          }
         }
       }
     }

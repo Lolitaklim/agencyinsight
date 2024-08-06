@@ -108,8 +108,10 @@ if (!isset($_SESSION['username'])) {
   <div class="btn-submit-container container">
     <button class="btn-submit" type="button" onclick="submitAllForms()">СОХРАНИТЬ</button>
   </div>
+  <div class="container" style="text-align: center;">После нажатия на кнопку сохранить, дождаться уведомления с ответом
+    сервера</div>
   <section class="also container bottom_main">
-    <p class="title">Читайте также</p>
+    <!-- <p class="title">Читайте также</p> -->
     <div class="also-cases-container" id="alsoCasesContainer">
       <!-- <a href="#" class="also-case">
           <div class="container_img">
@@ -143,7 +145,7 @@ if (!isset($_SESSION['username'])) {
   <footer class="container footer container">
     <div class="desktop">
       <div class="left">
-        <p class="title-footer">Готовы начать?...</p>
+        <p class="title-footer">Футер</p>
       </div>
     </div>
   </footer>
