@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="stylesheet" href="./styles/header.scss" />
     <link rel="stylesheet" href="./styles/menu.scss" />
-    <link rel="stylesheet" href="./styles/formLeaving.scss" />
-    <link rel="stylesheet" href="./styles/homepage/hero.scss" />
+    <!-- <link rel="stylesheet" href="./styles/homepage/hero.scss" />
     <link rel="stylesheet" href="./styles/homepage/mainNews.scss" />
     <link rel="stylesheet" href="./styles/homepage/carousel.scss" />
     <link rel="stylesheet" href="./styles/homepage/casesHomepage.scss" />
     <link rel="stylesheet" href="./styles/casesContainer.scss" />
+    <link rel="stylesheet" href="./styles/homepage/aboutUs.scss" />
     <link rel="stylesheet" href="./styles/homepage/services.scss" />
-    <link rel="stylesheet" href="./styles/homepage/news.scss" />
+    <link rel="stylesheet" href="./styles/homepage/news.scss" /> -->
+    <link rel="stylesheet" href="./styles/formLeaving.scss" />
+    <link rel="stylesheet" href="./styles/thankYouMessage.scss" />
     <link rel="stylesheet" href="./styles/footer.scss" />
   </head>
   <body>
@@ -115,11 +117,7 @@
               <a href="mailto:info@agencyinsight.ru" class="email"
                 >info@agencyinsight.ru</a
               >
-              <a
-                href="privacy-policy.html"
-                class="privacy-policy"
-                target="_blank"
-              >
+              <a href="privacy.pdf" class="privacy-policy" target="_blank">
                 Политика конфиденциальности
               </a>
               <a href="#" class="copyright"> © Digital agency Insight 2024</a>
@@ -204,6 +202,29 @@
         >
       </div>
     </section>
+    <section class="about-us">
+      <h2 class="title container">О нас</h2>
+      <div class="cards" id="aboutUsCards">
+        <div class="card">
+          <p class="top">существуем на рынке</p>
+          <p class="bottom">с<span>2016</span> года</p>
+        </div>
+        <div class="card">
+          <p class="top">Количество<br />консультаций</p>
+          <p class="bottom"><span>30+</span></p>
+        </div>
+        <div class="card">
+          <p class="top">
+            Работаем <span class="nowrap">с бюджетом, руб</span>
+          </p>
+          <p class="bottom">от<span>500к+</span></p>
+        </div>
+        <div class="card">
+          <p class="top">Количество завершенных проектов</p>
+          <p class="bottom"><span>150+</span></p>
+        </div>
+      </div>
+    </section>
     <section class="services container">
       <h2>Услуги</h2>
       <div class="cards">
@@ -216,10 +237,10 @@
             </div>
             <div class="content">
               <p>
-                Настроим рекламу под любые ваши задачи: продажи, охваты,
-                узнаваемость, упоминания. Простраиваем логику: реклама +
-                экономика бизнса + продажи, применяем цепочки и воронки,
-                котороые сработают конкретно у вас
+                Раскроем потенциал вашего бизнеса! Привлечем целевую аудиторию,
+                повысим узнаваемость и продажи. Анализируем, разрабатываем
+                стратегию и настраиваем рекламу так, чтобы каждый рубль приносил
+                прибыль.
               </p>
               <div class="card-footer">
                 <span>Контекстная реклама</span>
@@ -235,7 +256,12 @@
               <span></span>
             </div>
             <div class="content">
-              <p>Тут все понятно</p>
+              <p>
+                Ваш идеальный сайт - это наша задача! Мы предлагаем полный
+                спектр услуг по разработке сайтов и используем современные
+                трендовые технологии, чтобы ваш сайт работал быстро и
+                эффективно.
+              </p>
               <div class="card-footer">
                 <span>Структура</span>
                 <span>Прототип</span>
@@ -251,7 +277,11 @@
               <span></span>
             </div>
             <div class="content">
-              <p>Часто бывают мелкие задачки текстовые</p>
+              <p>
+                Создаем контент, который привлечет и удержит клиентов! Мы
+                создаем стратегию контента, которая соответствует вашим целям и
+                задачам, и обеспечиваем регулярное обновление материалов.
+              </p>
               <div class="card-footer">
                 <span>Статьи</span>
                 <span>Гайды</span>
@@ -267,7 +297,12 @@
               <span></span>
             </div>
             <div class="content">
-              <p>Можем переводить</p>
+              <p>
+                Дайте вашему бизнесу международный размах! Мы обеспечиваем
+                профессиональный перевод рекламных материалов на английский
+                язык, что позволит вам выйти на новые рынки и привлечь
+                зарубежных клиентов.
+              </p>
               <div class="card-footer">
                 <span>Английский язык</span>
               </div>
@@ -282,7 +317,10 @@
               <span></span>
             </div>
             <div class="content">
-              <p>Тут про дизайн</p>
+              <p>
+                Каждая деталь имеет значение! Поэтому мы стремимся сделать так,
+                чтобы ваш визуал был не только красивым, но и эффективным.
+              </p>
               <div class="card-footer">
                 <span>Логотипы</span>
                 <span>Фирменный стиль</span>
@@ -290,7 +328,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <!-- <div class="card">
             <div class="head">
               <h3>Бизнес аудит</h3>
               <button class="btn-services"></button>
@@ -303,13 +341,18 @@
               <button class="btn-services"></button>
               <span></span>
             </div>
-          </div>
+          </div> -->
           <div class="card last-card">
             <div class="head">
               <h3>Комплексное ведение</h3>
               <span></span>
             </div>
-            <p>Берем ваш маркетинговый отдел в свои руки</p>
+            <p>
+              Доверьте продвижение вашего бизнеса профессионалам! Наша команда
+              предлагает комплексные решения для эффективного продвижения вашего
+              бизнеса на всех этапах - от анализа рынка и конкурентов до
+              настройки рекламных кампаний и отслеживания результатов.
+            </p>
             <div class="card-footer">
               <span>Аналитика</span>
               <span>Маркетинговая стратегия</span>
@@ -331,6 +374,108 @@
       </div>
       <div class="news-cards" id="newsCards"></div>
     </section>
+    <div id="overlayFormLeaving" class="overlay-form-leaving"></div>
+    <div id="formLeaving" class="form-leaving container">
+      <div class="header">
+        <h3 class="title">Привет!<br />Расскажите нам<br />о своем проекте</h3>
+        <div class="buttons">
+          <a class="button-fill-hover btn-contact" href="#"
+            ><span class="dot">•</span><span class="text">Связаться</span></a
+          >
+          <button id="closeFormLeavingBtn" class="close-button"></button>
+        </div>
+      </div>
+      <form>
+        <p class="title">Заполните ваши данные</p>
+        <div class="inputs-container">
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="text" name="company" placeholder="Компания" required />
+          <input
+            type="tel"
+            name="tel"
+            placeholder="+7 (000) 000-00-00"
+            required
+          />
+          <input type="email" name="email" placeholder="Почта" required />
+        </div>
+        <div class="form-footer">
+          <button class="button-fill-hover submit" type="submit">
+            <span class="dot">•</span><span class="text">Отправить</span>
+          </button>
+          <p>
+            Нажав на кнопку, соглашаюсь <br />на обработку
+            <a href="privacy.pdf" target="_blank">персональных данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="thank-you-message container show" id="thankYou">
+      <button class="close-btn" id="thankYouClose"></button>
+      <div class="content">
+        <div class="thank-you">
+          <p class="title">
+            Спасибо! <br />Наши менеджеры свяжутся с вами как можно скорее!
+          </p>
+          <p class="description">
+            А пока вы можете посмотреть наши работы или скачать
+            <a href="#">презентацию об агентстве.</a>
+          </p>
+        </div>
+        <div class="list">
+          <p class="title">Как будет строиться процесс:</p>
+          <ol>
+            <li>
+              Свяжемся с вами для уточнения деталей проекта и сориентируем по
+              стоимости
+            </li>
+            <li>Проведем брифинг или попросим заполнить бриф</li>
+            <li>Подготовим предложение и презентуем</li>
+            <li>Запланируем старт работ и подготовим документы</li>
+          </ol>
+        </div>
+      </div>
+      <div class="footer-thank-you">
+        <a class="logo" href="./">
+          <img
+            class="img-mob"
+            src="./img/logo-mob-white.svg"
+            alt="Логотип Insight"
+          />
+          <img
+            class="img-desk"
+            src="./img/logo-desc-white.svg"
+            alt="Логотип Insight"
+          />
+        </a>
+        <nav>
+          <a
+            class="header-link"
+            href="cases.html"
+            data-b="Проекты"
+            data-f="Проекты"
+          ></a>
+          <div class="dropdown">
+            <a
+              class="header-link drop-link"
+              href="#"
+              data-b="Услуги"
+              data-f="Услуги"
+              ><span></span
+            ></a>
+            <!-- <div class="dropdown-content">
+                  <a href="#">Ссылка 1</a>
+                  <a href="#">Ссылка 2</a>
+                  <a href="#">Ссылка 3</a>
+                </div> -->
+          </div>
+          <a class="header-link" href="#" data-b="Команда" data-f="Команда"></a>
+          <a class="header-link" href="#" data-b="Новости" data-f="Новости"></a>
+        </nav>
+        <div class="buttons">
+          <button class="menu-btn" id="openMenu"></button>
+        </div>
+      </div>
+    </div>
     <footer class="container footer">
       <div class="mobile">
         <a class="logo" href="#">
@@ -401,7 +546,7 @@
           <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
           д.43, оф. блок 1, оф 7
         </div>
-        <a class="privacy-policy" href="privacy-policy.html"
+        <a class="privacy-policy" href="privacy.pdf" target="_blank"
           >Политика конфиденциальности</a
         >
         <p class="copyright">© Insight digital agency. All rights reserved</p>
@@ -424,7 +569,7 @@
             <br />Новосибирская обл., г. Новосибирск, <br />ул. Большевистская
             д.43, оф. блок 1, оф 7
           </div>
-          <a class="privacy-policy" href="privacy-policy.html"
+          <a class="privacy-policy" href="privacy.pdf" target="_blank"
             >Политика конфиденциальности</a
           >
           <p class="copyright">© Insight digital agency. All rights reserved</p>
@@ -473,7 +618,7 @@
               </button>
               <p>
                 Нажав на кнопку, соглашаюсь <br />на обработку
-                <a href="privacy-policy.html">персональных данных</a>
+                <a href="privacy.pdf" target="_blank">персональных данных</a>
               </p>
             </div>
           </form>
@@ -515,53 +660,16 @@
         </div>
       </div>
     </footer>
-    <!-- openFormLeavingBtn -->
-    <div id="overlayFormLeaving" class="overlay-form-leaving"></div>
-    <div id="formLeaving" class="form-leaving container">
-      <div class="header">
-        <h3 class="title">Привет!<br />Расскажите нам<br />о своем проекте</h3>
-        <div class="buttons">
-          <a class="button-fill-hover btn-contact" href="#"
-            ><span class="dot">•</span><span class="text">Связаться</span></a
-          >
-          <button id="closeFormLeavingBtn" class="close-button"></button>
-        </div>
-      </div>
-      <form>
-        <p class="title">Заполните ваши данные</p>
-        <div class="inputs-container">
-          <input type="text" name="name" placeholder="Ваше имя" required />
-          <input type="text" name="company" placeholder="Компания" required />
-          <input
-            type="tel"
-            name="tel"
-            placeholder="+7 (000) 000-00-00"
-            required
-          />
-          <input type="email" name="email" placeholder="Почта" required />
-        </div>
-        <div class="form-footer">
-          <button class="button-fill-hover submit" type="submit">
-            <span class="dot">•</span><span class="text">Отправить</span>
-          </button>
-          <p>
-            Нажав на кнопку, соглашаюсь <br />на обработку
-            <a href="privacy-policy.html">персональных данных</a>
-          </p>
-        </div>
-      </form>
-    </div>
     <a href="case.html" style="display: none"></a>
-    <script src="./scripts/globalVariables.js"></script>
-    <script src="./scripts/headerMenu.js"></script>
-    <!-- <script type="module" src="./scripts/typewriter.js"></script>
-    <script src="./scripts/mobileScroll.js"></script>
-    <script type="module" src="./scripts/swipers.js"></script>
-    <script src="./scripts/carousel.js"></script>
-    <script src="./scripts/homepageCases.js"></script>
-    <script src="./scripts/services.js"></script> -->
-    <script src="./scripts/footer.js"></script>
-    <script type="module" src="./scripts/index.js"></script>
-    <script></script>
+    <script type="module" src="./scripts/headerMenu.js"></script>
+    <!-- <script type="module" src="./scripts/homepage/typewriter.js"></script>
+    <script type="module" src="./scripts/homepage/mobileScroll.js"></script>
+    <script type="module" src="./scripts/homepage/swipers.js"></script>
+    <script type="module" src="./scripts/homepage/carousel.js"></script>
+    <script type="module" src="./scripts/homepage/cases.js"></script>
+    <script type="module" src="./scripts/homepage/aboutUs.js"></script> -->
+    <!-- <script type="module" src="./scripts/homepage/services.js"></script> -->
+    <!-- <script type="module" src="./scripts/homepage/index.js"></script> -->
+    <script type="module" src="./scripts/footer.js"></script>
   </body>
 </html>

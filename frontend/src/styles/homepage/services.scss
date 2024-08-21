@@ -4,6 +4,7 @@ $gray: rgba(217, 217, 217, 1);
 $purple: rgba(101, 60, 244, 1);
 
 .services {
+  margin-top: 10.44vw;
   display: flex;
   flex-direction: column;
   gap: 1.56vw;
@@ -86,16 +87,19 @@ $purple: rgba(101, 60, 244, 1);
     background-color: $purple;
     padding: 6.25vw 3.75vw;
     p {
-      margin-top: 40.2vw;
+      margin-top: 22.44vw;
+      max-width: 82%;
     }
     .card-footer {
-      margin-top: 40.2vw;
+      margin-top: 22.44vw;
+      max-width: 90%;
     }
   }
 }
 
 @media (min-width: 670px) {
   .services {
+    margin-top: 60px;
     gap: 24px;
     h2 {
       font-size: 40px;
@@ -149,6 +153,7 @@ $purple: rgba(101, 60, 244, 1);
         flex-direction: column;
       }
       p {
+        max-width: 90%;
         margin: auto 0;
         padding: 24px 0;
         font-size: 12px;
@@ -169,11 +174,11 @@ $purple: rgba(101, 60, 244, 1);
       padding: 18px;
       p {
         margin-top: 136px;
-        // margin: auto 0;
+        // max-width: 90%;
       }
       .card-footer {
         margin-top: 136px;
-        // margin: auto 0;
+        max-width: 100%;
       }
     }
   }

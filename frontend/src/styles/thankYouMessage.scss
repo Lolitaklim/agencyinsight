@@ -1,0 +1,343 @@
+$black: rgba(14, 13, 23, 1);
+$white: rgba(255, 255, 255, 1);
+$gray: rgba(217, 217, 217, 1);
+$purple: rgba(101, 60, 244, 1);
+
+.thank-you-message {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100%;
+  z-index: 40;
+  background: $purple;
+  color: $white;
+  transition: left 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &.show {
+    left: 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: 23.48vw;
+    right: 3.13vw;
+    width: 10vw;
+    height: 10vw;
+    background-image: url('../img/close-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .content {
+    margin-top: 23.48vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    .thank-you {
+      .title {
+        font-size: 7.3vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.38vw;
+        width: 70%;
+      }
+      .description {
+        margin-top: 4vw;
+        font-size: 4.35vw;
+        line-height: 120%;
+        letter-spacing: -0.07vw;
+        a {
+          color: $white;
+          font-weight: 500;
+        }
+      }
+    }
+    .list {
+      .title {
+        font-size: 6.2vw;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.21vw;
+      }
+      ol {
+        margin-top: 3.6vw;
+        margin-left: 6vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4.17vw;
+        width: 94%;
+        li {
+          font-size: 4.4vw;
+          line-height: 120%;
+          letter-spacing: -0.07vw;
+        }
+      }
+    }
+  }
+  .footer-thank-you {
+    padding: 6.26vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        width: 45vw;
+        height: auto;
+      }
+      .img-desk {
+        display: none;
+      }
+    }
+    nav {
+      display: none;
+    }
+    .buttons {
+      .menu-btn {
+        width: 10vw;
+        height: 10vw;
+        background-image: url('../img/burger-menu-white.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  header {
+    padding: 34px 0px;
+  }
+}
+
+@media (min-width: 550px) {
+  .thank-you-message {
+    flex-direction: column;
+    justify-content: space-between;
+    .close-btn {
+      position: absolute;
+      top: 18px;
+      right: 31px;
+      width: 44px;
+      height: 44px;
+    }
+    .content {
+      margin-top: 180px;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 58px;
+      .thank-you {
+        .title {
+          width: 100%;
+          font-size: 30px;
+          letter-spacing: -1.8px;
+        }
+        .description {
+          max-width: 304px;
+          margin-top: 20px;
+          font-size: 18px;
+          letter-spacing: -0.36px;
+        }
+      }
+      .list {
+        .title {
+          font-size: 24px;
+          letter-spacing: -0.96px;
+          max-width: 68%;
+        }
+        ol {
+          margin-top: 20px;
+          margin-left: 24px;
+          gap: 16px;
+          width: 86%;
+          li {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+          }
+        }
+      }
+    }
+    .footer-thank-you {
+      padding: 20px 0px;
+      .logo {
+        img {
+          width: 176px;
+          height: 36px;
+        }
+        .img-mob {
+          display: none;
+        }
+        .img-desk {
+          display: block;
+        }
+      }
+      .buttons {
+        .menu-btn {
+          background-image: none;
+          position: relative;
+          display: flex;
+          width: 93px;
+          height: 40px;
+          align-items: center;
+          gap: 16px;
+          border-radius: 16px;
+          border: 2px solid #e7e7e7;
+          &::before {
+            content: 'Меню';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: -0.32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .thank-you-message {
+    .close-btn {
+      right: 34px;
+    }
+    .content {
+      margin-top: 185px;
+      gap: 63px;
+      .thank-you {
+        .title {
+          width: 335px;
+          font-size: 40px;
+          letter-spacing: -2.4px;
+        }
+        .description {
+          max-width: unset;
+          width: 445px;
+          font-size: 20px;
+          letter-spacing: -0.4px;
+        }
+      }
+      .list {
+        .title {
+          max-width: 100%;
+        }
+        ol {
+          gap: 10px;
+          width: 100%;
+          li {
+            font-size: 20px;
+            letter-spacing: -0.4px;
+          }
+        }
+      }
+    }
+    .footer-thank-you {
+      nav {
+        display: flex;
+        gap: 36px;
+        .header-link {
+          color: $white;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: -0.32px;
+          position: relative;
+          overflow: hidden;
+          &:hover:after {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          &:hover:before {
+            opacity: 0;
+            transform: translateY(110%);
+          }
+          &:after {
+            top: 0;
+            left: 0;
+            display: block;
+            transition: 0.3s;
+            position: absolute;
+            content: attr(data-b);
+            transform: translateY(-110%);
+          }
+          &:before {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            display: block;
+            transition: 0.3s;
+            position: relative;
+            content: attr(data-f);
+            transform: translateY(0);
+          }
+        }
+        .dropdown {
+          position: relative;
+          .drop-link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            span {
+              background-image: url('../img/chevron-down-white.svg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 18px;
+              height: 18px;
+              transition: transform 0.3s ease;
+            }
+          }
+          &:hover span {
+            transform: rotate(180deg);
+          }
+          // .dropdown-content {
+          //   display: none;
+          //   position: absolute;
+          //   background-color: #f9f9f9;
+          //   min-width: 100px;
+          //   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          //   z-index: 1;
+          //   a {
+          //     display: block;
+          //     &:hover {
+          //       background-color: #f1f1f1;
+          //     }
+          //   }
+          // }
+          // &:hover .dropdown-content {
+          //   display: block;
+          // }
+          // &:hover .drop-link {
+          // }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .thank-you-message {
+    max-width: unset;
+    .close-btn {
+      right: 60px;
+    }
+    .content {
+      justify-content: flex-start;
+      gap: 144px;
+      .thank-you {
+        .title {
+          width: 517px;
+        }
+        .description {
+          width: 445px;
+        }
+      }
+      .list {
+        ol {
+          max-width: 420px;
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
-const SERVER_URL = 'http://localhost:8080'
+// 'use strict'
 
-const state = {}
+export const SERVER_URL = 'http://localhost:8080'
+// const state = {}
