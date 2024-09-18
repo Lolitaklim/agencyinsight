@@ -1,3 +1,6 @@
+const SERVER_URL = 'http://localhost:8080'
+// const state = {}
+
 const caseHeadTmp = (imageUrl, altImage, title, category, logo, altLogo) => `
     <div class="case-head">
         <img class="logo" src="${SERVER_URL}/uploads/${logo}" alt="${altLogo}" />

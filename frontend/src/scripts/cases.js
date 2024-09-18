@@ -2,7 +2,8 @@
 
 const casesContainer = document.getElementById('casesContainer')
 const categoriesContainer = document.getElementById('categoriesContainer')
-
+const SERVER_URL = 'http://localhost:8080'
+const state = {}
 const caseTemplate = (
   href,
   imageUrl,
