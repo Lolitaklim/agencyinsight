@@ -565,17 +565,7 @@
   margin: 0 auto;
   width: 400px;
   letter-spacing: -3px;
-  background: linear-gradient(
-    90deg,
-    #ff0000 0%,
-    #c96603 14%,
-    #b8b809 28%,
-    #07c007 42%,
-    #0000ff 57%,
-    #4b0082 71%,
-    #9400d3 85%,
-    #ff0000 100%
-  );
+  background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

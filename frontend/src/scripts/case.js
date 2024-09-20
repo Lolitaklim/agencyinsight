@@ -152,6 +152,7 @@ function renderContent(data) {
     .querySelector('meta[name="keywords"]')
     .setAttribute('content', caseData.keywords)
 
+  console.log(caseData)
   const caseHead = caseHeadTmp(
     caseData.image_url,
     caseData.alt_image,
@@ -161,9 +162,9 @@ function renderContent(data) {
     caseData.alt_logo
   )
   let htmlContent = caseHead
-  console.log(data)
 
-  const pageData = JSON.parse(data.case[0].page_data)
+  // const pageData = JSON.parse(data.case[0].page_data)
+  const pageData = data.case[0].page_data
 
   pageData.case_blocks.forEach((block) => {
     let blockHtml = ''
@@ -193,18 +194,18 @@ function renderContent(data) {
   })
   document.getElementById('caseContainer').innerHTML = htmlContent
 
-  // const alsoCases = data.also_cases
-  //   .map((item) =>
-  //     alsoCaseTmp(
-  //       `#${item.href}`,
-  //       item.image_url,
-  //       item.alt_image,
-  //       item.title,
-  //       item.category
-  //     )
-  //   )
-  //   .join('')
-  // document.getElementById('alsoCasesContainer').innerHTML = alsoCases
+  const alsoCases = data.also_cases
+    .map((item) =>
+      alsoCaseTmp(
+        `#${item.href}`,
+        item.image_url,
+        item.alt_image,
+        item.title,
+        item.category
+      )
+    )
+    .join('')
+  document.getElementById('alsoCasesContainer').innerHTML = alsoCases
 }
 
 async function loadCase() {
