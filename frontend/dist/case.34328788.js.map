@@ -1,0 +1,1 @@
+{"mappings":"","sources":["src/scripts/globalVariables.js"],"sourcesContent":["const SERVER_URL = 'http://localhost:8080'\n\nconst state = {}\n"],"names":[],"version":3,"file":"case.34328788.js.map"}

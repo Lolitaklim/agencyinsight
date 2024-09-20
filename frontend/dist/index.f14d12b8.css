@@ -1,0 +1,172 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  display: flex;
+}
+
+header .logo img {
+  width: 45vw;
+  height: auto;
+}
+
+header .logo .img-desk, header nav, header .buttons .btn-contact {
+  display: none;
+}
+
+header .buttons .menu-btn {
+  background-image: url("burger-menu.9d3827d9.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10vw;
+  height: 10vw;
+}
+
+@media (width >= 400px) {
+  header {
+    padding: 34px 0;
+  }
+}
+
+@media (width >= 550px) {
+  header {
+    padding: 20px 0;
+  }
+
+  header .logo img {
+    width: 176px;
+    height: 36px;
+  }
+
+  header .logo .img-mob {
+    display: none;
+  }
+
+  header .logo .img-desk {
+    display: block;
+  }
+
+  header .buttons {
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+
+  header .buttons .btn-contact {
+    color: #fff;
+    letter-spacing: -.32px;
+    background-color: #0e0d17;
+    border-radius: 16px;
+    gap: 10px;
+    padding: 12px 24px 12px 22px;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+  }
+
+  header .buttons .btn-contact .dot {
+    color: #653cf4;
+  }
+
+  header .buttons .btn-contact:after {
+    background: #653cf4;
+  }
+
+  header .buttons .btn-contact:hover .dot {
+    color: #0e0d17;
+  }
+
+  header .buttons .menu-btn {
+    background-image: none;
+    border: 2px solid #e7e7e7;
+    border-radius: 16px;
+    align-items: center;
+    gap: 16px;
+    width: 93px;
+    height: 40px;
+    display: flex;
+    position: relative;
+  }
+
+  header .buttons .menu-btn:before {
+    content: "Меню";
+    color: #0e0d17;
+    letter-spacing: -.32px;
+    font-size: 16px;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (width >= 900px) {
+  header nav {
+    gap: 36px;
+    display: flex;
+  }
+
+  header nav .header-link {
+    letter-spacing: -.32px;
+    font-size: 16px;
+    line-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header nav .header-link:hover:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  header nav .header-link:hover:before {
+    opacity: 0;
+    transform: translateY(110%);
+  }
+
+  header nav .header-link:after {
+    content: attr(data-b);
+    transition: all .3s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-110%);
+  }
+
+  header nav .header-link:before {
+    opacity: 1;
+    content: attr(data-f);
+    transition: all .3s;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
+
+  header nav .dropdown {
+    position: relative;
+  }
+
+  header nav .dropdown .drop-link {
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  header nav .dropdown .drop-link span {
+    background-image: url("chevron-down.fa17c5af.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    transition: transform .3s;
+  }
+
+  header nav .dropdown:hover span {
+    transform: rotate(180deg);
+  }
+}
+/*# sourceMappingURL=index.f14d12b8.css.map */

@@ -1,0 +1,2 @@
+function t(){state.buttonsContainer.classList.add("scrolled"),clearTimeout(state.timeoutScroll),state.timeoutScroll=setTimeout(()=>{state.buttonsContainer.classList.remove("scrolled")},300)}state.buttonsContainer=document.getElementById("mobile-buttons"),window.innerWidth<=650?window.addEventListener("scroll",t):(window.removeEventListener("scroll",t),state.buttonsContainer.classList.remove("scrolled"));
+//# sourceMappingURL=index.3a831d81.js.map

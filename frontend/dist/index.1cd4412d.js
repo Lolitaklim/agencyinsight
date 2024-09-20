@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".openFormLeavingBtn"),t=document.getElementById("formLeaving"),n=document.getElementById("closeFormLeavingBtn"),o=document.getElementById("overlayFormLeaving");e.forEach(e=>{e.addEventListener("click",function(){t.classList.add("show"),o.classList.add("show")})}),n.addEventListener("click",function(){t.classList.remove("show"),o.classList.remove("show")});
+//# sourceMappingURL=index.1cd4412d.js.map

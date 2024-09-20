@@ -1,0 +1,2 @@
+var e=globalThis,r={},t={},o=e.parcelRequire834e;null==o&&((o=function(e){if(e in r)return r[e].exports;if(e in t){var o=t[e];delete t[e];var i={id:e,exports:{}};return r[e]=i,o.call(i.exports,i,i.exports),i.exports}var n=Error("Cannot find module '"+e+"'");throw n.code="MODULE_NOT_FOUND",n}).register=function(e,r){t[e]=r},e.parcelRequire834e=o),(0,o.register)("aQc8T",function(e,r){Object.defineProperty(e.exports,"SERVER_URL",{get:()=>t,set:void 0,enumerable:!0,configurable:!0});let t="http://localhost:8080"}),o("aQc8T");
+//# sourceMappingURL=cases.c963d5e2.js.map

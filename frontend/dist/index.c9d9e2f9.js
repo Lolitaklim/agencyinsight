@@ -1,0 +1,2 @@
+const e=new IntersectionObserver((e,t)=>{e.forEach(e=>{if(e.isIntersecting){let n=e.target,o=document.documentElement.scrollHeight-window.innerHeight,l=n.scrollWidth-n.clientWidth,r=window.scrollY;document.addEventListener("scroll",()=>(function(e,t,n,o,l){let r=window.scrollY;e.scrollLeft=Math.min((r-t)/(n-t)*o*5,o)})(n,r,o,l,0)),t.unobserve(n)}})},{threshold:.9}),t=document.getElementById("aboutUsCards");e.observe(t);
+//# sourceMappingURL=index.c9d9e2f9.js.map

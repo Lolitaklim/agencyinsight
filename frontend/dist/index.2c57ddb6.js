@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".btnServices");function t(e){e.classList.toggle("active");let t=e.closest(".card").querySelector(".content");e.classList.toggle("expanded")?t.style.maxHeight=t.scrollHeight+"px":t.style.maxHeight=null}window.innerWidth<670?e.forEach(e=>{e.disabled=!1,e.addEventListener("click",()=>t(e))}):e.forEach(e=>{e.disabled=!0,e.removeEventListener("click",()=>t(e))});
+//# sourceMappingURL=index.2c57ddb6.js.map

@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Snake Blocks</title><style>.grid-container{background:#0096d0;grid-template-rows:60px 60px;grid-template-columns:22% 22% 22% 22%;gap:10px;margin-top:5px;padding:10px;display:grid}.item{background-color:azure}</style></head><body> <div class="grid-container" id="container"></div> <script>const e=(e,a,t,i,n,s)=>`
+    <a href="${e}" class="${s}">
+      <div class="container_img">
+        <img src="${SERVER_URL}/uploads/${a}" alt="${t}"/>
+      </div>
+        <p class="title">${i}</p>
+        <p class="description">${n}</p>
+    </a>
+`;function a(a){return state.dataNews.map(t=>e(`#${t.href}`,t.image_url,t.alt_image,t.title,t.description,a)).join("")}async function t(e,t,i,n){try{let s=await fetch(`${SERVER_URL}/api/${i}`);state.dataNews=await s.json(),document.getElementById(t).innerHTML=a("swiper-slide"),n&&(document.getElementById(n).innerHTML=a("card")),new Swiper(e,{modules:[Autoplay,Pagination],spaceBetween:10,loop:!0,autoplay:{delay:4e3,pauseOnMouseEnter:!0},pagination:{el:".swiper-pagination",type:"progressbar"}})}catch(e){console.error("Ошибка загрузки данных для Swiper:",e)}}t("#newsSwiper","newsSwiperWrapper","get_homepage_news.php","newsCards"),t("#mainNewsSwiper","mainNewsSwiperWrapper","get_swiper_hero.php");</script> </body></html>

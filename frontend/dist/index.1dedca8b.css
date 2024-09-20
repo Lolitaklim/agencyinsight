@@ -1,0 +1,645 @@
+.bottom_main {
+  background-color: #fff;
+  border-bottom-right-radius: 10vw;
+  border-bottom-left-radius: 10vw;
+  padding-bottom: 3.75vw;
+  position: relative;
+}
+
+.footer {
+  color: #fff;
+  background-color: #0e0d17;
+  margin-top: -12vw;
+  padding-top: 21.89vw;
+  padding-bottom: 6.58vw;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .mobile {
+  flex-direction: column;
+  display: flex;
+}
+
+.footer .mobile .logo img {
+  width: 34.09vw;
+  height: 7.51vw;
+}
+
+.footer .mobile .title-footer {
+  letter-spacing: -.53vw;
+  margin-top: 7.7vw;
+  font-size: 8.76vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.footer .mobile .description {
+  letter-spacing: -.15vw;
+  max-width: 72.24vw;
+  margin-top: 1.25vw;
+  font-size: 3.75vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.footer .mobile .open-form-btn {
+  color: #0e0d17;
+  letter-spacing: -.09vw;
+  background: #fff;
+  border-radius: 4.38vw;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  width: 100%;
+  margin-top: 5.63vw;
+  padding: 5vw 3.75vw;
+  font-size: 4.38vw;
+  line-height: 100%;
+  display: flex;
+}
+
+.footer .mobile .open-form-btn span {
+  color: #653cf4;
+}
+
+.footer .mobile .info {
+  gap: 24.39vw;
+  margin-top: 10.01vw;
+  display: flex;
+}
+
+.footer .mobile .info .contacts .title {
+  letter-spacing: -.05vw;
+  font-size: 6.25vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.footer .mobile .info .contacts a {
+  letter-spacing: -.08vw;
+  text-underline-offset: 3px;
+  font-size: 3.75vw;
+  line-height: 110%;
+  text-decoration-line: underline;
+  display: block;
+}
+
+.footer .mobile .info .contacts .mail {
+  margin-top: 3.75vw;
+}
+
+.footer .mobile .info .contacts .tel {
+  margin-top: 5vw;
+}
+
+.footer .mobile .info .contacts .additional-tel {
+  margin-top: 3.75vw;
+}
+
+.footer .mobile .info .footer-menu {
+  flex-direction: column;
+  gap: 4.38vw;
+  margin-top: 5vw;
+  display: flex;
+}
+
+.footer .mobile .info .footer-menu a {
+  letter-spacing: -.08vw;
+  font-size: 3.75vw;
+  line-height: 110%;
+}
+
+.footer .mobile .follow {
+  margin-top: 10.01vw;
+}
+
+.footer .mobile .follow .title {
+  letter-spacing: -.05vw;
+  font-size: 6.25vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.footer .mobile .follow .links {
+  gap: 3.13vw;
+  margin-top: 5vw;
+  display: flex;
+}
+
+.footer .mobile .follow .links a {
+  width: 10.01vw;
+  height: 10.01vw;
+}
+
+.footer .mobile .company-info {
+  letter-spacing: .05vw;
+  margin-top: 12.51vw;
+  font-size: 3.13vw;
+  line-height: 120%;
+}
+
+.footer .mobile .privacy-policy {
+  letter-spacing: .15vw;
+  text-underline-offset: 2px;
+  text-transform: uppercase;
+  margin-top: 7.51vw;
+  padding-left: .4vw;
+  font-size: 3.13vw;
+  font-weight: 500;
+  line-height: 110%;
+  text-decoration: underline;
+}
+
+.footer .mobile .copyright {
+  letter-spacing: .1vw;
+  text-transform: uppercase;
+  margin-top: 5vw;
+  font-size: 3.13vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.footer .desktop {
+  display: none;
+}
+
+@media (width >= 650px) {
+  .bottom_main {
+    border-bottom-right-radius: 21px;
+    border-bottom-left-radius: 21px;
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-top: -30px;
+    padding-top: 93px;
+    padding-right: 39px;
+  }
+
+  .footer .mobile {
+    display: none;
+  }
+
+  .footer .desktop {
+    gap: 36px;
+    display: flex;
+  }
+
+  .footer .desktop .left a {
+    display: block;
+  }
+
+  .footer .desktop .left .title-footer {
+    letter-spacing: -1.92px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .left .description {
+    letter-spacing: -.56px;
+    width: 260.25px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .left .mail {
+    letter-spacing: -.72px;
+    text-underline-offset: 3px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+    text-decoration-line: underline;
+  }
+
+  .footer .desktop .left .tel {
+    letter-spacing: -.72px;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .left .additional-tel {
+    letter-spacing: -.72px;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .left .company-info {
+    letter-spacing: -.2px;
+    margin-top: 36px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+
+  .footer .desktop .left .privacy-policy {
+    text-transform: uppercase;
+    text-underline-offset: 3px;
+    margin-top: 28px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 110%;
+    text-decoration-line: underline;
+  }
+
+  .footer .desktop .left .copyright {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .right {
+    flex-direction: column;
+    gap: 43px;
+    display: flex;
+  }
+
+  .footer .desktop .right form {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .footer .desktop .right form .title {
+    letter-spacing: -.8px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .right form input, .footer .desktop .right form textarea {
+    letter-spacing: -.56px;
+    color: #fff;
+    background-color: #0e0d17;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .right form input::placeholder, .footer .desktop .right form textarea::placeholder {
+    opacity: .5;
+  }
+
+  .footer .desktop .right form .inputs-container {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 12px;
+    display: flex;
+  }
+
+  .footer .desktop .right form .inputs-container .main-inputs {
+    gap: 6px;
+    display: flex;
+  }
+
+  .footer .desktop .right form .inputs-container .main-inputs .name {
+    width: 43%;
+  }
+
+  .footer .desktop .right form .inputs-container .main-inputs .tel {
+    width: 57%;
+  }
+
+  .footer .desktop .right form .inputs-container .task {
+    height: 99px;
+  }
+
+  .footer .desktop .right form .form-footer {
+    align-items: center;
+    gap: 9px;
+    margin-top: 16px;
+    display: inline-flex;
+  }
+
+  .footer .desktop .right form .form-footer .submit {
+    color: #0e0d17;
+    letter-spacing: -.24px;
+    background: #fff;
+    border-radius: 10.5px;
+    align-items: center;
+    gap: 7.875px;
+    padding: 12px 24px;
+    font-size: 12px;
+    line-height: 100%;
+    display: flex;
+  }
+
+  .footer .desktop .right form .form-footer .submit .dot {
+    color: #0e0d17;
+  }
+
+  .footer .desktop .right form .form-footer .submit:after {
+    background: #653cf4;
+  }
+
+  .footer .desktop .right form .form-footer .submit:hover .dot, .footer .desktop .right form .form-footer .submit:hover .text {
+    color: #fff;
+  }
+
+  .footer .desktop .right form .form-footer p {
+    letter-spacing: -.2px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+
+  .footer .desktop .right form .form-footer p a {
+    text-underline-offset: 3px;
+    text-decoration-line: underline;
+  }
+
+  .footer .desktop .right .follow {
+    border: 1px solid #fff;
+    border-radius: 10.5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    display: flex;
+  }
+
+  .footer .desktop .right .follow .title {
+    letter-spacing: -.72px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+
+  .footer .desktop .right .follow .links {
+    align-items: center;
+    gap: 9px;
+    display: flex;
+  }
+
+  .footer .desktop .right .follow .links a {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (width >= 900px) {
+  .bottom_main {
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    padding-bottom: 50px;
+  }
+
+  .footer {
+    margin-top: -40px;
+    padding-top: 130px;
+    padding-right: 50px;
+  }
+
+  .footer .desktop {
+    gap: 31px;
+  }
+
+  .footer .desktop .left .title-footer {
+    letter-spacing: -2.4px;
+    font-size: 40px;
+  }
+
+  .footer .desktop .left .description {
+    letter-spacing: -.72px;
+    width: 347px;
+    font-size: 18px;
+  }
+
+  .footer .desktop .left .mail {
+    letter-spacing: -.96px;
+    margin-top: 67px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .left .tel {
+    letter-spacing: -.96px;
+    margin-top: 32px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .left .additional-tel {
+    letter-spacing: -.96px;
+    margin-top: 16px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .left .company-info {
+    letter-spacing: -.28px;
+    margin-top: 52px;
+    font-size: 14px;
+  }
+
+  .footer .desktop .left .privacy-policy {
+    margin-top: 36px;
+    font-size: 14px;
+  }
+
+  .footer .desktop .left .copyright {
+    width: 358px;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  .footer .desktop .right {
+    gap: 60px;
+  }
+
+  .footer .desktop .right form .title {
+    letter-spacing: -.96px;
+    margin-top: 7px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .right form input, .footer .desktop .right form textarea {
+    letter-spacing: -.72px;
+    border-radius: 16px;
+    padding: 15px 24px;
+    font-size: 18px;
+  }
+
+  .footer .desktop .right form .inputs-container {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .footer .desktop .right form .inputs-container .task {
+    height: 132px;
+  }
+
+  .footer .desktop .right form .form-footer {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .footer .desktop .right form .form-footer .submit {
+    letter-spacing: -.28px;
+    border-radius: 14px;
+    gap: 10.5px;
+    padding: 16px 32px;
+    font-size: 14px;
+  }
+
+  .footer .desktop .right form .form-footer p {
+    letter-spacing: -.28px;
+    font-size: 14px;
+  }
+
+  .footer .desktop .right .follow {
+    border-radius: 14px;
+    padding: 12px 24px;
+  }
+
+  .footer .desktop .right .follow .title {
+    letter-spacing: -.96px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .right .follow .links {
+    gap: 12px;
+  }
+
+  .footer .desktop .right .follow .links a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (width >= 1200px) {
+  .bottom_main {
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-bottom: 70px;
+  }
+
+  .footer {
+    margin-top: -40px;
+    padding-top: 164px;
+    padding-right: 70px;
+  }
+
+  .footer .desktop {
+    gap: 60px;
+  }
+
+  .footer .desktop .left .title-footer {
+    letter-spacing: -3.3px;
+    font-size: 56px;
+  }
+
+  .footer .desktop .left .description {
+    letter-spacing: -.96px;
+    width: 487px;
+    margin-top: 12px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .left .mail {
+    letter-spacing: -1.44px;
+    margin-top: 100px;
+    font-size: 36px;
+  }
+
+  .footer .desktop .left .tel {
+    letter-spacing: -1.44px;
+    margin-top: 40px;
+    font-size: 36px;
+  }
+
+  .footer .desktop .left .additional-tel {
+    letter-spacing: -1.44px;
+    margin-top: 20px;
+    font-size: 36px;
+  }
+
+  .footer .desktop .left .company-info {
+    letter-spacing: -.36px;
+    margin-top: 72px;
+    font-size: 18px;
+  }
+
+  .footer .desktop .left .privacy-policy {
+    margin-top: 52px;
+    font-size: 18px;
+  }
+
+  .footer .desktop .left .copyright {
+    width: 459px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .footer .desktop .right {
+    gap: 85px;
+  }
+
+  .footer .desktop .right form .title {
+    letter-spacing: -1.44px;
+    margin-top: 12px;
+    font-size: 36px;
+  }
+
+  .footer .desktop .right form input, .footer .desktop .right form textarea {
+    letter-spacing: -.96px;
+    border-radius: 22.5px;
+    padding: 24px 32px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .right form .inputs-container {
+    margin-top: 24px;
+  }
+
+  .footer .desktop .right form .inputs-container .task {
+    height: 184px;
+  }
+
+  .footer .desktop .right form .form-footer {
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .footer .desktop .right form .form-footer .submit {
+    letter-spacing: -.48px;
+    border-radius: 19.688px;
+    gap: 14px;
+    padding: 24px 40px;
+    font-size: 24px;
+  }
+
+  .footer .desktop .right form .form-footer p {
+    letter-spacing: -.32px;
+    font-size: 16px;
+  }
+
+  .footer .desktop .right .follow {
+    border-radius: 20px;
+    padding: 17px 34px;
+  }
+
+  .footer .desktop .right .follow .title {
+    letter-spacing: -1.28px;
+    font-size: 32px;
+  }
+
+  .footer .desktop .right .follow .links {
+    gap: 17px;
+  }
+
+  .footer .desktop .right .follow .links a {
+    width: 45px;
+    height: 45px;
+  }
+}
+/*# sourceMappingURL=index.1dedca8b.css.map */

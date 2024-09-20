@@ -1,0 +1,148 @@
+.about-us {
+  margin-top: 12.5vw;
+}
+
+.about-us .title {
+  letter-spacing: -.375vw;
+  font-size: 6.25vw;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+.about-us .cards {
+  flex-wrap: wrap;
+  gap: 1.25vw;
+  margin-top: 3.75vw;
+  padding-left: 3.75vw;
+  padding-right: 3.75vw;
+  display: flex;
+}
+
+.about-us .cards .card {
+  color: #fff;
+  background-color: #653cf4;
+  border-radius: 3.75vw;
+  flex-direction: column;
+  flex: calc(50% - .625vw);
+  justify-content: space-between;
+  max-width: calc(50% - .625vw);
+  height: 37.5vw;
+  padding: 3.75vw;
+  display: flex;
+}
+
+.about-us .cards .card .top {
+  letter-spacing: .125vw;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  line-height: 120%;
+}
+
+.about-us .cards .card .bottom {
+  letter-spacing: -.225vw;
+  font-size: 3.75vw;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.about-us .cards .card .bottom span {
+  letter-spacing: -.675vw;
+  font-size: 11.25vw;
+}
+
+.about-us .cards .card:nth-child(2), .about-us .cards .card:nth-child(3) {
+  background-color: #0e0d17;
+}
+
+@media (width >= 650px) {
+  .about-us {
+    margin-top: 60px;
+  }
+
+  .about-us .title {
+    letter-spacing: -2.4px;
+    font-size: 40px;
+  }
+
+  .about-us .cards {
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap;
+    gap: 8px;
+    max-width: 1440px;
+    margin: 24px auto 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    position: sticky;
+    top: 60px;
+    overflow-x: auto;
+  }
+
+  .about-us .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-us .cards .card {
+    color: #fff;
+    background-color: #653cf4;
+    border-radius: 16px;
+    flex-direction: column;
+    flex: none;
+    justify-content: space-between;
+    max-width: 428px;
+    height: 232px;
+    padding: 24px;
+    display: flex;
+  }
+
+  .about-us .cards .card .top {
+    letter-spacing: .6px;
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  .about-us .cards .card .bottom {
+    letter-spacing: -1.2px;
+    font-size: 20px;
+  }
+
+  .about-us .cards .card .bottom span {
+    letter-spacing: -4.8px;
+    font-size: 80px;
+  }
+
+  .about-us .cards .card:first-child {
+    width: 279px;
+  }
+
+  .about-us .cards .card:nth-child(2) {
+    width: 247px;
+  }
+
+  .about-us .cards .card:nth-child(3) {
+    background-color: #653cf4;
+    width: 322px;
+  }
+
+  .about-us .cards .card:nth-child(4) {
+    background-color: #0e0d17;
+    width: 428px;
+  }
+}
+
+@media (width >= 1000px) {
+  .about-us .cards {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (width >= 1300px) {
+  .about-us .cards {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+/*# sourceMappingURL=index.8d06c315.css.map */

@@ -1,0 +1,137 @@
+.cases-container {
+  flex-direction: column;
+  gap: 1.55vw;
+  margin-top: 3.72vw;
+  display: flex;
+}
+
+.cases-container .case {
+  color: #fff;
+  position: relative;
+}
+
+.cases-container .case .container_img {
+  border-radius: 6vw;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-height: 65.1vw;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.cases-container .case .container_img img {
+  width: 100%;
+  height: auto;
+}
+
+.cases-container .case .container_img:before {
+  content: "";
+  background: linear-gradient(#0000 0%, #0000004d 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cases-container .case .category {
+  letter-spacing: .15vw;
+  text-transform: uppercase;
+  max-width: 70%;
+  font-size: 3.2vw;
+  line-height: 110%;
+  position: absolute;
+  top: 6.2vw;
+  left: 4.96vw;
+}
+
+.cases-container .case .title {
+  letter-spacing: -.17vw;
+  max-width: 84%;
+  font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 110%;
+  position: absolute;
+  bottom: 5.2vw;
+  left: 4.96vw;
+}
+
+@media (width >= 650px) {
+  .cases-container {
+    flex-flow: wrap;
+    gap: .93vw;
+    margin-top: 2.8vw;
+  }
+
+  .cases-container .case {
+    flex: calc(50% - .93vw);
+  }
+
+  .cases-container .case .container_img {
+    border-radius: 3vw;
+    max-height: 33vw;
+  }
+
+  .cases-container .case .category {
+    letter-spacing: .09vw;
+    font-size: 1.8vw;
+    top: 3vw;
+    left: 3vw;
+  }
+
+  .cases-container .case .title {
+    letter-spacing: -.1vw;
+    font-size: 2.7vw;
+    bottom: 3vw;
+    left: 3vw;
+  }
+}
+
+@media (width >= 900px) {
+  .cases-container {
+    grid-template-rows: 21.8vw 21.8vw;
+    grid-template-columns: repeat(3, calc(33.3333% - 4px));
+    gap: 6px;
+    margin-top: 20px;
+    display: grid;
+  }
+
+  .cases-container .case {
+    flex: unset;
+  }
+
+  .cases-container .case .container_img {
+    border-radius: 20px;
+    max-height: 44vw;
+  }
+
+  .cases-container .case .container_img img {
+    width: 155%;
+  }
+
+  .cases-container .case .category {
+    letter-spacing: .6px;
+    font-size: 12px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .cases-container .case .title {
+    letter-spacing: -.72px;
+    font-size: 18px;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+@media (width >= 1200px) {
+  .cases-container {
+    grid-template-rows: 16vw 16vw;
+    grid-template-columns: repeat(4, calc(25% - 6px));
+    gap: 8px;
+  }
+}
+/*# sourceMappingURL=index.59a8d4b1.css.map */

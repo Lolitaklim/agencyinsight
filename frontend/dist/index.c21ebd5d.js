@@ -1,0 +1,10 @@
+var e=globalThis,t={},i={},r=e.parcelRequire834e;null==r&&((r=function(e){if(e in t)return t[e].exports;if(e in i){var r=i[e];delete i[e];var a={id:e,exports:{}};return t[e]=a,r.call(a.exports,a,a.exports),a.exports}var l=Error("Cannot find module '"+e+"'");throw l.code="MODULE_NOT_FOUND",l}).register=function(e,t){i[e]=t},e.parcelRequire834e=r),(0,r.register)("3YRFJ",function(e,t){Object.defineProperty(e.exports,"updateCasesDisplay",{get:()=>o,set:void 0,enumerable:!0,configurable:!0});var i=r("aQc8T");let a={},l=document.getElementById("casesContainer"),n=(e,t,r,a,l,n)=>`
+    <a href="${e}" class="case" style="grid-area: ${n}">
+        <div class="container_img">
+            <img src="${i.SERVER_URL}/uploads/${t}" alt="${r}" />
+        </div>
+        <p class="category">${l}</p>
+        <p class="title">${a}</p>
+    </a>
+`;(async function(){try{let e=await fetch(`${i.SERVER_URL}/api/get_homepage_cases.php`);a.data=await e.json(),a.layout=[],o()}catch(e){console.error("Ошибка загрузки данных для Cases:",e)}})();let o=()=>{l.innerHTML="",window.innerWidth>=1200?s(4,8):window.innerWidth<=1200&&window.innerWidth>=900?s(3,6):window.innerWidth<=900&&window.innerWidth>=650?c(a.data.slice(0,4)):window.innerWidth<=650&&c(a.data.slice(0,3))};function s(e,t){let i=function(e,t){let i=0,r=[];for(let a=0;a<e.length;a++){let l=parseInt(e[a].block_size,10);if(i+l<=t)i+=l,r.push(e[a]);else if(i+1==t&&2==l){let t={...e[a],block_size:"1"};i+=1,r.push(t)}if(i===t)break}return r}(a.data,t);if(a.layout.length=0,c(i),a.layout.length%e>0){let t=e-a.layout.length%e;a.layout.push(...Array(t).fill("."))}let r="";for(let t=0;t<a.layout.length;t+=e){let i=a.layout.slice(t,t+e);t/e%2==1&&i.reverse(),r+=`'${i.join(" ")}' `}l.style.gridTemplateAreas=r.trim()}function c(e){let t=e.map(e=>{let t=`item-${e.display_order}`,i=1==e.block_size?1:2;return a.layout.push(...Array(i).fill(t)),n(`#${e.href}`,e.image_url,e.alt_image,e.title,e.category,`item-${e.display_order}`)}).join("");l.innerHTML=t}}),r("3YRFJ");
+//# sourceMappingURL=index.c21ebd5d.js.map

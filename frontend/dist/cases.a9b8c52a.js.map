@@ -1,0 +1,1 @@
+{"mappings":"AAAA,eAAe;AAEf,MAAM,aAAa,wBACnB,mBAAmB","sources":["src/scripts/globalVariables.js"],"sourcesContent":["// 'use strict'\n\nconst SERVER_URL = 'http://localhost:8080'\n// const state = {}\n"],"names":[],"version":3,"file":"cases.a9b8c52a.js.map","sourceRoot":"/__parcel_source_root/"}
